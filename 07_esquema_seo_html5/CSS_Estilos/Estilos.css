@@ -1,0 +1,18 @@
+.main_header {
+    background-color: brown;
+    color: bisque;
+    /* min-height: 10vh; */
+    padding: 0.8rem 0rem 0.5rem 1rem;
+}
+
+.main_footer {
+    background-color: brown;
+    color: bisque;
+    text-align: center;
+    padding: 1rem;
+}
+.destacado {
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    font-weight: bold;
+}
