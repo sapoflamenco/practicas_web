@@ -13,7 +13,6 @@
 .p1 {
     background-color: rgb(217, 228, 176);
     color: black;
-    text-align: center;
     padding: 1rem;
 }
 
@@ -25,10 +24,11 @@
 }
 
 body {
-    margin:0
+    margin:0;
+    background-color: rgb(233, 231, 200)
 }
 
-h2 {
-    text-align: center;
+.content_wrapper {
+    margin: 1rem 3rem;
+    color: rgb(51, 22, 22)
 }
-
