@@ -1,0 +1,34 @@
+.recuadro {
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
+.main_header {
+    background-color: rgb(139, 153, 199);
+    color: bisque;
+    /* min-height: 10vh; */
+    padding: 0.8rem 0rem 0.5rem 1rem;
+}
+
+.p1 {
+    background-color: rgb(217, 228, 176);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.main_footer {
+    background-color: rgb(146, 203, 207);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+body {
+    margin:0
+}
+
+h2 {
+    text-align: center;
+}
+
