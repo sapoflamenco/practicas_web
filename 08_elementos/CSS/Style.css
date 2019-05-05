@@ -18,7 +18,7 @@
     color: rgb(100, 100, 100);
     padding: 1rem;
     font-weight: bold;
-    text-align: center;
+    
 }
 
 .main_footer {
@@ -73,5 +73,6 @@ h2 {
     background-color: rgb(186, 244, 254);
     color: rgb(0, 7, 37);
     font-weight: bold;
-    text-align: center;
+    padding: 2rem;
+
 }
