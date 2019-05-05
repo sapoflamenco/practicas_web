@@ -1,24 +1,28 @@
 .recuadro {
-    border: 1px solid grey;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 15px;
 }
 
 .main_header {
-    background-color: rgb(139, 153, 199);
-    color: bisque;
+    background-color: rgb(3, 213, 252);
+    ;
+    color: rgb(68, 49, 27)
+    ;
     /* min-height: 10vh; */
     padding: 0.8rem 0rem 0.5rem 1rem;
+    text-align: center;
 }
 
 .p1 {
-    background-color: rgb(217, 228, 176);
-    color: black;
+    background-color: rgb(127, 235, 255);
+    color: rgb(100, 100, 100);
     padding: 1rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .main_footer {
-    background-color: rgb(146, 203, 207);
+    background-color: rgb(3, 213, 252);
     color: black;
     text-align: center;
     padding: 1rem;
@@ -26,12 +30,13 @@
 
 body {
     margin:0;
-    background-color: rgb(244, 250, 225);
+    background-color: rgb(186, 244, 254);
+    font-family: "Homer Simpson", cursive;
 }
 
 .content_wrapper {
     margin: 1rem 3rem;
-    color: rgb(51, 22, 22)
+    color: rgb(51, 22, 22);
 }
 
 .etiquetas {
@@ -39,7 +44,7 @@ body {
 }
 
 h3 {
-    background-color:  rgb(206, 230, 193);
+    background-color:  rgb(255, 253, 147);
 }
 
 img {
@@ -51,3 +56,13 @@ img {
     margin: 3rem
 }
 
+h2 {
+    background-color:  rgb(80, 227, 255);
+    padding: 1rem,
+}
+
+.p2 {
+    background-color: rgb(219, 254, 255);
+    text-align: center;
+    border-radius: 15px;
+}
