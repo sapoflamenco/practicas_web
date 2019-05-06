@@ -59,11 +59,12 @@
                     <h3>Section</h3>
                     <blockquote class="p2">El elemento de HTML section (&lt;section&gt;) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un <strong>esquema</strong>. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas. Es, por lo tanto, una etiqueta semántica.</blockquote> 
                     <blockquote class="p2">Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.</blockquote>
-                        <footer>
+                       <!--  <footer >
                                 <cite>
-                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section</a>
+                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section" 
+                                        >developer.mozilla.org</a>
                                 </cite>
-                        </footer>
+                        </footer> -->
             </section>
             <section id="header">
                     <h3>Header</h3>
@@ -88,6 +89,11 @@
                     <h3>Aside</h3>
                     <blockquote class="p2">El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en contenido que está <em>tangencialmente relacionado</em> con el contenido que le rodea, que podría ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados. </blockquote>
             </section>
+            <footer class="referencia">
+                <cite>
+                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento">https://developer.mozilla.org/es/docs/Web/HTML/Elemento</a>
+                </cite>
+        </footer>
     </div>
     </section>
     <section class="sections">
@@ -98,30 +104,31 @@
         <div class="etiquetas">
                 <section>
                         <h3>Párrafos</h3>
-                        <p class="p2">Se pueden crear párrafos con las etiquetas p, pre y blockquote</p>
-                        <p class="p2">Ejemplo de un párrafo preformateado:</p>
+                        <p class="p2">Se pueden crear párrafos con las etiquetas <em class="sub">&lt;p&gt;, &lt;pre&gt; y &lt;blockquote&gt;</em></p>
+                        <p class="p2">Ejemplo de un párrafo preformateado (<em class="sub">&lt;pre&gt;</em>):</p>
                         <pre>
                                 Esto esta dentro
                                 de la etiqueta pre
                         </pre>
-                        <p class="p2">Se puede usar para fragmentos de código</p>
+                        <p class="p2">Se puede usar para <em>fragmentos de código</em>:</p>
                         <pre>
                                 let x = 25
                                 let y = 24
                                 let z = x + y
                         </pre>
-                        <p class="p2">La etiqueta blockquote se utiliza para crear citas literales en un bloque, tal y como hemos hecho anteriormente</p>
+                        <p class="p2">La etiqueta <em class="sub">blockquote</em> se utiliza para crear citas literales en un bloque, tal y como hicimos al principio del curso.</p>
                 </section>
                 <section>
                         <h3>Listas</h3>
-                        <p>Existen 3 tipos de lista</p>
-                        <ul>
-                                <li>Desordenadas: ul</li>
-                                <li>Ordenadas: ol</li>
-                                <li>De definiciones: dl</li>
+                        <p class="p2">Existen 3 tipos de lista</p>
+                        <ul class="lista">
+                                <li><em class="negrita">Desordenada</em>: &lt;ul&gt;</li>
+                                <li><em class="negrita">Ordenada</em>: &lt;ol&gt;</li>
+                                <li><em class="negrita">De definiciones</em>: &lt;dl&gt;</li>
                         </ul>
-                        <p>Ejemplo de lista ordenada:</p>
-                        <ol>
+                        <p class="p2">Una lista <em class="sub">ordenada</em> es la que por naturaleza tiene un orden (los días de la semana)</p> 
+                        <p class="p2">Ejemplo de lista <em class="sub">ordenada</em>:</p>
+                        <ol class="lista">
                                 <li>Lunes</li>
                                 <li>Martes</li>
                                 <li>Miércoles</li>
@@ -130,28 +137,47 @@
                                 <li>Sábado</li>
                                 <li>Domingo</li>
                         </ol>
-                         <p>Una lista ordenada es la que por naturaleza tiene un orden (los días de la semana), una desordenada es la que puedo organizar como quiera (tipos de color de pelo)</p>
-                        <p>ol va numerada y ul no</p>
-                        <p>La lista de definiciones no lleva (&lt;li&gt;) sino (&lt;dt&gt;) y (&lt;dd&gt;) como titulo y definición:</p>
-                        <p>Se pueden editar en CSS para que término y definición estén alineados</p>  
+                        <div>
+                                <figure>
+                                <img src="./assets/Captura5.PNG" alt="lista ordenada">
+                        </figure>
+                        </div>
+                        <p class="p2">Una lista <em class="sub">desordenada</em> es la que puedo organizar como quiera</p>
+                        <p class="p2">Ejemplo de lista <em class="sub">desordenada</em>:</p>
+                        <div>
+                                        <figure>
+                                        <img src="./assets/Captura9.PNG" alt="lista ordenada">
+                                </figure>
+                                </div>
+                        <div>
+                                        <figure>
+                                        <img src="./assets/Captura7.PNG" alt="lista ordenada">
+                                </figure>
+                        </div>
                         <dl>
-                                <dt class="dt">ul</dt><dd class="dd">Desordenadas</dd>
-                                <dt class="dt">ol</dt><dd class="dd">Ordenadas</dd>
-                                <dt class="dt">dl</dt><dd class="dd">De definiciones</dd>
+                        <p class="p2">Ejemplo de lista <em class="sub">de definiciones</em>:</p>
+                                        <dt>&lt;ul&gt;</dt><dd>Desordenadas</dd>
+                                        <dt>&lt;ol&gt;</dt><dd>Ordenadas</dd>
+                                        <dt>&lt;dl&gt;</dt><dd>De definiciones</dd>
+                                </dl>
+                                <div>
+                                        <figure>
+                                        <img src="./assets/Captura6.PNG" alt="lista ordenada">
+                                </figure>
+                                </div>
+                        <p class="p2">Una lista <em class="sub">de definiciones</em> también se puede editar en CSS para que término y definición estén alineados</p>  
+                        <dl class="p2">
+                                <dt class="dt">&lt;ul&gt;</dt><dd class="dd">Desordenadas</dd>
+                                <dt class="dt">&lt;ol&gt;</dt><dd class="dd">Ordenadas</dd>
+                                <dt class="dt">&lt;dl&gt;</dt><dd class="dd">De definiciones</dd>
                         </dl>
                         <div class="clearfix"></div>
                         <div>
                                 <figure>
-                                <img src="./assets/Captura3.PNG" alt="listas clearfix">
-                                <figcaption>
-                                <p class="pimg">Le damos la clase clearfix</p>
-                                </figcaption>
+                                <img src="./assets/Captura8.PNG" alt="listas clearfix">
                         </figure>
                         <figure>
                                 <img src="./assets/Captura4.PNG" alt="listas CSS">
-                                <figcaption>
-                                <p class="pimg">Le hacemos estos cambios en CSS</p>
-                                </figcaption>
                         </figure>  
                 </div>
                          
@@ -164,11 +190,6 @@
         </header>
     </section>
     </div>
-    <footer>
-                <cite>
-                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento">https://developer.mozilla.org/es/docs/Web/HTML/Elemento</a>
-                </cite>
-        </footer>
     <footer class="main_footer">
         <div class="recuadro">
                 <p>&copy; &reg; &#8482; MARTA VALDÉS</p> 
@@ -176,4 +197,4 @@
         </div>
     </footer>
 </body>
-</html>
+</html> 

@@ -93,3 +93,19 @@ h2 {
 .clearfix {
     clear: both;
 }
+
+.referencia {
+    text-align: center
+}
+
+
+.lista {
+    background-color: rgb(219, 254, 255);
+}
+
+.sub {
+    text-decoration-line: underline
+}
+.negrita {
+    font-weight: bold
+}
