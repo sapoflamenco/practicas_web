@@ -110,6 +110,12 @@ h2 {
     font-weight: bold
 }
 
-.p3 {
 
+.verde {
+    color: green
 }
+
+/* strong {
+    font-weight: normal;
+    display: none
+} */
