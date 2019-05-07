@@ -15,7 +15,7 @@
 
 .p1 {
     background-color: rgb(127, 235, 255);
-    color: rgb(100, 100, 100);
+    color: rgb(66, 66, 66);
     padding: 1rem;
     font-weight: bold;
     
@@ -79,3 +79,34 @@ h2 {
 .pimg {
     color: rgb(100, 100, 100);
 }
+
+.dt {
+    float: left;
+    clear: left;
+}
+
+.dd {
+    float: left;
+    clear: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.referencia {
+    text-align: center
+}
+
+
+.lista {
+    background-color: rgb(219, 254, 255);
+}
+
+.sub {
+    text-decoration-line: underline
+}
+.negrita {
+    font-weight: bold
+}
+
