@@ -6,25 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="Elementos de HTML5">
-        <title>Elementos de la Web</title>
+        <title>Elementos de la Web - Inicio</title>
         <link rel="stylesheet" href="./CSS/Style.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body id="inicio">
         <header class="main_header">
                 <h1>ETIQUETAS DE HTML</h1>
                 <p>~Clasificación de las <strong>etiquetas</strong> según el <strong>estándar HTML 5.2</strong>~</p>
+                <!--  <nav>
+                        <ul>
+                                <li><a href="#section_elements">Sections</a></li>
+                                <li><a href="#grouping">Grouping</a></li>
+                                <li><a href="#text_level">Text level</a></li>
+                                <li><a href="./embet_media.html">Multimedia</a></li>
+                        </ul>
+                </nav> -->
         </header>
+        <main>
         <p class="p1">El estándar diferencia principalmente tres tipos de <strong>etiquetas</strong>:</p>
-        <nav class="nav">
-                <p>Sections</p>
-                <p>Grouping content </p>
-                <p>Text-level semantics</p>
+        <nav>
+                <p><a href="#section_elements" rel="tag">Sections</a></p>
+                <p><a href="#grouping" rel="tag">Grouping Content</a></p>
+                <p><a href="#text_level" rel="tag">Text-level semantics</a></p>
         </nav>
 
         <div class="content_wrapper">
-                <section class="sections">
+                <section class="sections" id="section_elements">
                         <header>
                                 <h2 lang="en">Sections</h2>
                         </header>
@@ -56,7 +65,8 @@
                                                 <figcaption>
                                                         <p>Esquema de los elementos semánticos de HTML 5.2</p>
                                                         <footer>Tomado de <a
-                                                                        href="https://www.aulaclic.es/articulos/html5-semantica_1.html">Aulaclic</a>
+                                                                        href="https://www.aulaclic.es/articulos/html5-semantica_1.html"
+                                                                        rel="external">Aulaclic</a>
                                                         </footer>
                                                 </figcaption>
                                         </figure>
@@ -142,13 +152,18 @@
                                         </section>
                                         <footer class="referencia">
                                                 <cite>
-                                                        <a
-                                                                href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento">https://developer.mozilla.org/es/docs/Web/HTML/Elemento</a>
+                                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento"
+                                                                target="_blank"
+                                                                rel="external">https://developer.mozilla.org/es/docs/Web/HTML/Elemento</a>
                                                 </cite>
                                         </footer>
+                                        <footer class="footer_inicio">
+                                                <a href="#inicio">Inicio</a>
+                                        </footer>
                                 </div>
+
                 </section>
-                <section class="sections">
+                <section class="sections" id="grouping">
                         <header>
                                 <h2>Grouping content</h2>
                                 <p>Son etiquetas que por defecto tienen un display bloque, pero no contribuyen al
@@ -288,7 +303,8 @@
                                 <li><em class="negrita">&lt;Figure&gt;</em></li>
                         </ul>
                         <p class="p2">Según aparece en la Web de MDN: <q
-                                        cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/address">El
+                                        cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/address"
+                                        rel="external no referrer">El
                                         elemento HTML <em class="sub">&lt;address&gt;</em> aporta información de
                                         contacto para su &lt;article&gt; mas cercano o ancestro &lt;body&gt;; en el
                                         último caso lo aplica a todo el documento.</q></p>
@@ -311,10 +327,10 @@
                         <p class="p2">La etiqueta <em class="sub">&lt;br&gt;</em> crea un salto de línea.</p>
                         <p class="p2">Estas etiquetas es recomendable usarlas lo menos posible, por su bajo valor
                                 semántico y porque pueden estropear el diseño.</p>
-
+                        <footer class="footer_inicio"><a href="#inicio">Inicio</a></footer>
         </div>
         </section>
-        <section class="sections">
+        <section class="sections" id="text_level">
                 <div class="etiquetas">
                         <header>
                                 <h2>Text-level semantics</h2>
@@ -382,7 +398,7 @@
                                         <p class="p2">Nos quedamos con la etiqueta &lt;abbr&gt;, que indica abreviaturas
                                                 o acrónimos, y nos da la opción de especificar el significado de éstos.
                                                 Esto mejora SEO ya que si alguien busca las palabras sin abreviar
-                                                aparecen las mías igualmente, y accesibilidad, ya que un lector de voz
+                                                aparecen las nuestras, y accesibilidad, ya que un lector de voz
                                                 puede explicarlas.</p>
                                 </ul>
                         </section>
@@ -414,12 +430,21 @@
                                         <li><em class="negrita">&lt;Ins&gt;</em></li>
                                         <p>Instead, muestra el contenido que se ha insertado en lugar de otro.</p>
                                         <li><em class="negrita">&lt;Del&gt;</em></li>
-                                        <p>Deteled, muestra el contenido borrado.</p>
+                                        <p>Deteled, muestra el contenido que se ha borrado en su lugar, o simplemente borrado.</p>
                                 </ul>
                         </section>
+                        <footer class="footer_inicio">
+                                <a href="#inicio">Inicio</a>
+                        </footer>
                 </div>
 
+
         </section>
+</main>
+        <aside>
+                <h2>Publicidad</h2>
+                <p>Aquí iría la publicidad</p>
+        </aside>
         </div>
         <footer class="main_footer">
                 <address class="recuadro">

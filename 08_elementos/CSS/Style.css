@@ -69,13 +69,18 @@ h2 {
     border-radius: 15px;
 }
 
-.nav {
+nav {
+    text-decoration: none;
     background-color: rgb(186, 244, 254);
     color: rgb(0, 7, 37);
     font-weight: bold;
     padding: 2rem;
-
 }
+nav a {
+    color: inherit;
+    text-decoration: none
+}
+
 .pimg {
     color: rgb(100, 100, 100);
 }
@@ -118,4 +123,26 @@ h2 {
 /* strong {
     font-weight: normal;
     display: none
+} */
+
+.footer_inicio{
+    text-align: center;
+    margin: 1rem
+}
+
+/* .main_header nav {
+
+}
+
+.main_header nav ul {
+    list-style-type: none
+}
+
+.main_header nav li {
+    
+}
+
+.main_header nav a {
+    color: inherit;
+    text-decoration: none
 } */
