@@ -33,37 +33,91 @@
     <div class="content_wrapper">
         <main>
             <section class="sections" id="section_multimedia">
-            <header>
-                <h2>Multimedia</h2>
-            </header>
-            <p>Entre los elementos embebidos y multimedia, veremos como utilizar:</p>
-             <ul>
-                 <li>Imágenes</li>
-                     <ul>
+                <header>
+                    <h2>Multimedia</h2>
+                </header>
+                <p class="p2">Entre los elementos embebidos y multimedia, veremos como utilizar:</p>
+                <ul>
+                    <li>Imágenes</li>
+                    <ul>
                         <li>jpg</li>
                         <li>gif</li>
                         <li>png</li>
                         <li>(webp)</li>
                         <li>svg</li>
-                     </ul>
-                 <li>Video y Audio</li>
+                    </ul>
+                    <li>Video y Audio</li>
                     <ul>
                         <li>mp4</li>
                         <li>ogg</li>
-                        <li>webm</li>  
+                        <li>webm</li>
                     </ul>
-                 <li>Elementos de navegación gráficos</li> 
-             </ul>       
-                  
-       </main>
-        
-            <aside>
-                    <h2>Publicidad</h2>
-                    <p>Aquí iría la publicidad</p>
-                </aside>       
+                    <li>Elementos de navegación gráficos</li>
+                </ul>
+                <section>
+                    <h3>Imágenes</h3>
+                    <div class="section_images">
+                        <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
+                        <img src="./assets/varanococodrilo1.png" alt="Varano Cocodrilo">
+                        <img src="./assets/ardilla.gif" alt="Ardilla">
+                        <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="Barcas">
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- hace de barrera para que al hacer float en imagenes no flote tambien lo de abajo -->
+                    <!-- junto con .clearfix {clear: both;} en CSS-->
 
+                    <P class="p2">Uso de imágenes responsivas en HTML</P>
+                    <div>
+                        <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
+                        <img srcset="./assets/komodo.300.jpg 300w, 
+                                    ./assets/komodo.400.jpg 400w, 
+                                    ./assets/komodo.500.jpg 500w,
+                                    ./assets/komodo.jpg 600w" sizes=" (max-width: 300px), 
+                                    (max-width: 400px), 
+                                    (max-width: 500px)" src="./assets/komodo.jpg"
+                            alt="Varano de Komodo mostrando su lengua bífida">
+                    </div>
+                    <!-- <div> -->
+                    <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
+                    <img srcset="./assets/pajaro400.webp 400w, 
+                                    ./assets/pajaro600.webp 600w, 
+                                    ./assets/pajaro800.webp 800w" 
+                            sizes=" (max-width: 400px), 
+                                    (max-width: 600px), 
+                                    (max-width: 800px)" 
+                                src="./assets/pajaro.jpg" 
+                                alt="Pajaro en su ramita"> 
+                    </div>
+                    <!-- <p>Etiqueta picture</p> -->
+                    <!-- <picture>
+                        <source media="(min-width: 800px)" srcset="./assets/pajaro800.webp" type="image/webp">
+                        <source media="(min-width: 600px)" srcset="./assets/pajaro600.webp" type="image/webp">
+                        <source srcset="./assets/pajaro400.webp" type="image/webp">
+                        <img src="./assets/pajaro950.jpg"  alt="Pajaro en su ramita">
+                    </picture> -->
+                    
     </div>
+    </section>
+    <section>
+        <div class="clearfix"></div>
+        <!-- hace de barrera para que al hacer float en imagenes no flote tambien lo de abajo -->
+        <!-- junto con .clearfix {clear: both;} en CSS-->
+    </section>
+    <section>
+        <h3>Vídeo y audio</h3>
+        
 
+    </section>
+    <section>
+        <h3>Elementos de navegación gráficos</h3>
+    </section>
+    </section>
+    </main>
+    <aside>
+        <h2>Publicidad</h2>
+        <p>Aquí iría la publicidad</p>
+    </aside>
+    </div>
     <footer class="main_footer">
         <address class="recuadro">
             <p>&copy; &reg; &#8482; MARTA VALDÉS</p>
