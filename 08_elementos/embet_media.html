@@ -81,21 +81,18 @@
                     <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
                     <img srcset="./assets/pajaro400.webp 400w, 
                                     ./assets/pajaro600.webp 600w, 
-                                    ./assets/pajaro800.webp 800w" 
-                            sizes=" (max-width: 400px), 
+                                    ./assets/pajaro800.webp 800w" sizes=" (max-width: 400px), 
                                     (max-width: 600px), 
-                                    (max-width: 800px)" 
-                                src="./assets/pajaro.jpg" 
-                                alt="Pajaro en su ramita"> 
-                    </div>
-                    <!-- <p>Etiqueta picture</p> -->
-                    <!-- <picture>
+                                    (max-width: 800px)" src="./assets/pajaro.jpg" alt="Pajaro en su ramita">
+    </div>
+    <!-- <p>Etiqueta picture</p> -->
+    <!-- <picture>
                         <source media="(min-width: 800px)" srcset="./assets/pajaro800.webp" type="image/webp">
                         <source media="(min-width: 600px)" srcset="./assets/pajaro600.webp" type="image/webp">
                         <source srcset="./assets/pajaro400.webp" type="image/webp">
                         <img src="./assets/pajaro950.jpg"  alt="Pajaro en su ramita">
                     </picture> -->
-                    
+
     </div>
     </section>
     <section>
@@ -105,13 +102,24 @@
     </section>
     <section>
         <h3>Vídeo y audio</h3>
-        
-
+        <p>Es posible incluir un video desde una fuente externa</p>
+        <div class="youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_93kDSPlKIM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>Otra opción es reproducir vídeos de nuestro servidor</p>
+        <video controls>
+        <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
+        <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
+        </video>
     </section>
     <section>
-        <h3>Elementos de navegación gráficos</h3>
+        <h3>Elementos gráficos de navegación </h3>
     </section>
-    </section>
+    <aside>
+        <h3>Elementos embebidos no multimedia</h3>
+        <p>La etiqueta iframe permite acceder a otra web desde la nuestra</p>
+        <iframe class="web_externa" src="https://www.tajamar.es/"></iframe>
+    </aside>
     </main>
     <aside>
         <h2>Publicidad</h2>

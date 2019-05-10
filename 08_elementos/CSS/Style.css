@@ -164,3 +164,28 @@ nav a {
     display: block;
     float: left;
 }
+
+.web_externa {
+    width: 100%;
+    height: 60vh;
+}
+
+.youtube {
+    text-align: center;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.youtube iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+video {
+    max-width: 100%;
+}
