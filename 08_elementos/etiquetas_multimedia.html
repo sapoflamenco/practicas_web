@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Elementos de HTML5">
     <title>Elementos de la Web - Multimedia</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/Style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -19,15 +21,16 @@
     <main>
         <p class="menu centrar">Indice:</p>
         <nav class="p1">
-            <ul>
-                <li><a href="./index.html" rel="tag">~Introduccion~</a></li>
-                <li><a href="./index.html#Atributos_globales" rel="tag">~Atributos globales~</a></li>
-                <li><a href="./index.html#Etiquetas_de_documento" rel="tag">~Etiquetas de documento~</a></li>
-                <li><a href="./index.html#Etiquetas_de_seccion" rel="tag">~Etiquetas de sección~</a></li>
-                <li><a href="./index.html#Etiquetas_de_agrupacion" rel="tag">~Etiquetas de agrupación~</a></li>
-                <li><a href="./index.html#Etiquetas_de_texto" rel="tag">~Etiquetas de texto~</a></li>
-                <li><a href="./etiquetas_multimedia.html" rel="tag">~Etiquetas multimedia~</a></li>
-            </ul>
+                <ul>
+                        <li><a href="./index.html" rel="tag">~Introduccion~</a></li>
+                        <li><a href="./index.html#Atributos_globales" rel="tag">~Atributos~</a></li>
+                        <li><a href="./index.html#Etiquetas_de_documento" rel="tag">~Raíz y Head~</a></li>
+                        <li><a href="./index.html#Etiquetas_de_seccion" rel="tag">~Secciones~</a></li>
+                        <li><a href="./index.html#Etiquetas_de_agrupacion" rel="tag">~Agrupación~</a></li>
+                        <li><a href="./index.html#Etiquetas_de_texto" rel="tag">~Texto~</a></li>
+                        <li><a href="./etiquetas_multimedia.html" rel="tag">~Multimedia~</a></li>
+                        <li><a href="./datos.html" rel="tag">~Datos~</a><li>      
+                    </ul>
         </nav>
     </main>
     <div class="content_wrapper">
@@ -37,6 +40,8 @@
                     <h2>Multimedia</h2>
                 </header>
                 <p class="p2">Entre los elementos embebidos y multimedia, veremos como utilizar:</p>
+                <li><a href="#imagenes" rel="tag">Imágenes</a></li>
+                <li><a href="" rel="tag">Elementos de navegación gráficos</a></li>
                 <ul>
                     <li>Imágenes</li>
                     <ul>
@@ -72,16 +77,18 @@
                         <img srcset="./assets/komodo.300.jpg 300w, 
                                     ./assets/komodo.400.jpg 400w, 
                                     ./assets/komodo.500.jpg 500w,
-                                    ./assets/komodo.jpg 600w" sizes=" (max-width: 300px), 
-                                    (max-width: 400px), 
-                                    (max-width: 500px)" src="./assets/komodo.jpg"
+                                    ./assets/komodo.jpg 600w" 
+                            sizes=" (max-width: 300px) 300px, 
+                                    (max-width: 400px) 400px, 
+                                    (max-width: 500px) 500px" src="./assets/komodo.jpg"
                             alt="Varano de Komodo mostrando su lengua bífida">
                     </div>
                     <!-- <div> -->
                     <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
                     <img srcset="./assets/pajaro400.webp 400w, 
                                     ./assets/pajaro600.webp 600w, 
-                                    ./assets/pajaro800.webp 800w" sizes=" (max-width: 400px), 
+                                    ./assets/pajaro800.webp 800w" 
+                        sizes=" (max-width: 400px), 
                                     (max-width: 600px), 
                                     (max-width: 800px)" src="./assets/pajaro.jpg" alt="Pajaro en su ramita">
     </div>
@@ -109,33 +116,56 @@
                 allowfullscreen></iframe>
         </div>
         <p>Otra opción es reproducir vídeos de nuestro servidor</p>
-        <video controls>
+        <video controls poster="./assets/mono.jpg">
             <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
             <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
         </video>
     </section>
     <section>
         <h3>Elementos gráficos de navegación </h3>
-        <p title="prueba">Prueba</p>
+        <p>En HTML antiguo se usaba la etiqueta map para definir un hotspot</p>
+        <p>En HTML 5 se puede conseguir este efecto usando svg</p>
+        <embed src="./assets/logo.svg" type="image/svg+xml">
+            <p>También relacionado con la navegación gráfica</p>
     </section>
     <aside>
         <h3>Elementos embebidos no multimedia</h3>
         <p>La etiqueta iframe permite acceder a otra web desde la nuestra</p>
         <iframe class="web_externa" src="https://www.tajamar.es/"></iframe>
+        <p>Otras formas de insertar contenido son object y embed</p>
+        <p>Object:</p>
+        <object data="https://www.tajamar.es" type="text/html"></object>
+        <p>Embed:</p>
+        <embed src="https://www.tajamar.es" type="text/html">
     </aside>
     </main>
+    <footer class="footer_inicio">
+            <a href="#inicio" title="inicio" ><i class="fas fa-arrow-circle-up"></i></a>
+    </footer>
     <aside>
         <h2>Publicidad</h2>
         <p>Aquí iría la publicidad</p>
     </aside>
     </div>
-    <footer class="main_footer">
-        <address class="recuadro">
+    
+    <iframe class="iframe_footer" src="./_footer.html"></iframe>
+    <!-- <footer class="main_footer">
+        <address>
             <p>&copy; &reg; &#8482; MARTA VALDÉS</p>
             <p><a href="mailto://marta.valdes.azcarraga@tajamar365.com">marta.valdes.azcarraga@tajamar365.com</a>
             </p>
         </address>
-    </footer>
+        <aside>
+            <ul>
+                <li><a href="https://www.facebook.es" rel="external" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.es" rel="external" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/?lang=es" rel="external" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://github.com/Valdesazca" rel="external" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>                 
+        </aside>
+    </footer> -->
 </body>
+
+<!-- VALIDAAAAAAAAAAAAA -->
 
 </html>
