@@ -268,3 +268,12 @@ footer a {
 /* .palabra_rota {
     overflow-wrap: break-word;
 } */
+
+.titulo {
+    background-color:  rgb(3, 213, 252);
+}    
+
+.desarrollo {
+    font-family: 'Lora', serif;
+    text-align: center;
+}
