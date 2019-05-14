@@ -99,7 +99,8 @@ img {
 
 h2 {
     background-color:  rgb(80, 227, 255);
-    padding: 1rem,
+    /* padding: 1rem; */
+    text-align: center;
 }
 
 .p2 {
@@ -276,4 +277,42 @@ footer a {
 .desarrollo {
     font-family: 'Lora', serif;
     text-align: center;
+}
+
+.main_table {
+    width: 100%;
+    text-align: center;
+}
+
+.main_table>tbody>tr>th {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.main_table tr:nth-of-type(even) {
+    background-color: aliceblue;
+}
+
+.main_table tr:nth-of-type(odd) {
+    background-color: seashell;
+}
+/* nth-of-type(even)   las pares
+nth-of-type(odd)    las impares    */
+/* solo tr= todas */
+
+.viajes th {
+    border: 1px skyblue;
+    padding-top: 0.5 rem;
+    padding-bottom: 0.5 rem;
+}
+
+/* filas pares celdas de datos */
+.viajes tr:nth-of-type(even) td {
+    background-color: seashell;
+}
+
+/* filas impares celdas de datos */
+.viajes tr:nth-of-type(odd) td {
+    background-color: aliceblue;
 }
