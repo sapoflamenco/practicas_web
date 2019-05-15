@@ -80,6 +80,7 @@ body {
 .content_wrapper {
     margin: 1rem 3rem;
     color: rgb(51, 22, 22);
+    font-family: 'Cinzel', serif;
 }
 
 .etiquetas {
@@ -271,7 +272,7 @@ footer a {
 .iframe_footer {
     width: 100%;
     border: none;
-    height: 18vh;
+    height: 27vh;
 }
 
 /* .palabra_rota {
