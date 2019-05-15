@@ -15,12 +15,12 @@
 
 }
 
-/* .main_header p {
+.main_header p {
     font-size: 1.33rem;
     font-weight: bold;
     margin-top: -1rem;
     margin-bottom: 0;
-} */
+} 
 
 
 .menu {
@@ -89,6 +89,9 @@ body {
 h3 {
     background-color:  rgb(252, 251, 223);
     text-align: center;
+    
+}
+.div3 {
     margin: 3rem;
 }
 
@@ -325,4 +328,7 @@ nth-of-type(odd)    las impares    */
 .icono {
     position: relative;
     top: 10px;
+}
+.derecha {
+    text-align: right
 }

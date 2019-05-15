@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Elementos de HTML5">
+    <title>Elementos de la Web - Raíz, Head, Body</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body id="inicio">
+    <header class="main_header">
+        <h1>Etiquetas de HTML <img id="icono" src="https://img.icons8.com/color/48/000000/html-5.png" alt="icono_html5">
+        </h1>
+        <p>~Clasificación de las <strong>etiquetas</strong> según el <strong>estándar HTML 5.2~</strong></p>
+    </header>
+    <main>
+        <p class="menu centrar">Indice:</p>
+        <nav class="p1">
+            <ul>
+                <li><a href="./index.html" rel="tag">~Introduccion~</a></li>
+                <li><a href="./raiz_head_body.html" rel="tag">~Raíz, Head, Body~</a></li>
+                <li><a href="./index.html#Etiquetas_de_seccionado" rel="tag">~Esquemas del Body~</a></li>
+                <li><a href="./index.html#Etiquetas_de_agrupacion" rel="tag">~Agrupación~</a></li>
+                <li><a href="./index.html#Etiquetas_de_texto" rel="tag">~Texto~</a></li>
+                <li><a href="./etiquetas_multimedia.html" rel="tag">~Multimedia~</a></li>
+                <li><a href="./datos.html" rel="tag">~Datos~</a></li>
+                <li><a href="./index.html#Atributos_globales" rel="tag">~Atributos~</a></li>
+            </ul>
+        </nav>
+    </main>
+    <p class="p1 titulo">~Raíz, Head, Body~</p>
+    <div class="content_wrapper">
+        <section class="sections centrar" id="section_elements">
+            <main>
+                <p><a href="#a" rel="tag">Etiquetas Raíz</a></p>
+                <p><a href="#b" rel="tag">Etiqueta &lt;Head&gt;. Los Metadatos</a></p>
+                <p><a href="#c" rel="tag">Etiqueta &lt;Body&gt;</a></p>
+            </main>
+            <aside>
+                    <figure class="image_wrapper">
+                        <img style="text-align:right" src="./assets/doctype.png" alt="Metadatos">
+                    </figure>
+                </aside>
+            <div>
+                <header>
+                    <h2 class="p1" id="a">Etiquetas Raíz</h2>
+                </header>
+                <div class="desarrollo">
+                        <div class="div3">
+                    <h3>&lt;!doctype html&gt;</h3>
+                    <p class="p2">Con esta etiqueta simple indicamos que el documento está bajo el estándar HTML 5.</p>
+                    <p class="p2">Se introduce como primera línea de nuestro documento HTML 5.</p>
+                    
+                    <h3>&lt;html&gt;</h3>
+                    <p class="p2">Se introduce como segunda línea de nuestro documento.</p>
+                    <p class="p2">Representa la raíz de un documento HTML. El documento siempre debe cerrarse con la
+                        etiqueta de cierre &lt;/html&gt;</p>
+                    <p class="p2">Todo el contenido de nuestra Web estará dentro de esta etiqueta.</p>
+                    <aside>
+                            <figure class="image_wrapper">
+                                <img style="text-align:right" src="./assets/html.png" alt="Metadatos">
+                            </figure>
+                        </aside>
+                       
+                </div>
+                </div>
+                <div>
+                    <header>
+                        <h2 class="p1" id="b">Etiqueta &lt;Head&gt;. Los Metadatos</h2>
+                    </header>
+                    <div class="desarrollo">
+                        <p class="p2">La etiqueta &lt;head&gt; representa una colección de metadatos acerca del documento,
+                            incluyendo enlaces a, definiciones de, scripts y hojas de estilo.</p>
+                            <p class="p2">Dentro de esta etiqueta se incluye el atributo "lang" para especificar el idioma de nuestro documento</p>
+                        <p class="p2">Esta etiqueta alberga en su interior otras etiquetas:</p>
+                        <aside>
+                                <figure class="image_wrapper">
+                                    <img style="text-align:right" src="./assets/head.PNG" alt="Metadatos">
+                                </figure>
+                            </aside>
+                        <div class="div3">
+                          <h3>&lt;title&gt;</h3>
+                        <p class="p2">Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.</p>
+                        <aside>
+                                <figure class="image_wrapper">
+                                    <img style="text-align:right" src="./assets/Title.png" alt="Metadatos">
+                                </figure>
+                            </aside>
+                        <h3>&lt;meta&gt;</h3>
+                        <p class="p2">Define los metadatos que no pueden ser definidos usando otro elemento HTML.</p>
+                        <aside>
+                                <figure class="image_wrapper">
+                                    <img src="./assets/Metadatos.png" alt="Metadatos">
+                                </figure>
+                            </aside>
+                        
+                        
+                        <p class="p2"></p>
+                        <p class="p2"></p>
+                        <p class="p2"></p>
+                        
+                        <h3>&lt;link&gt;</h3>
+                        <p class="p2">Se usa para enlazar JavaScript y CSS externos con el documento HTML actual. Tambien sirve para asignar un icono o favicon a nuestra web en la pestaña del navegador o en la lista de marcadores.</p>
+                        <aside>
+                                <figure class="image_wrapper">
+                                    <img src="./assets/link.png" alt="Metadatos">
+                                </figure>
+                            </aside>
+                        <h3>&lt;style&gt;</h3>
+                        <p class="p2">Etiqueta de estilo usada para escribir CSS en línea.</p>
+                        <h3>&lt;base&gt;</h3>  
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <header>
+                            <h2 class="p1" id="c">Etiqueta &lt;Body&gt;</h2>
+                        </header>
+                        <div class="desarrollo">
+                            <p class="p2"></p>
+                        </div>
+
+                    </div>
+        </section>
+    </div>
+</body>
+
+</html>
