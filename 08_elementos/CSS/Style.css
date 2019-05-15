@@ -12,6 +12,7 @@
     padding: 0.8rem 0rem 0.5rem 1rem;
     text-align: center;
     font-family: 'Cinzel', serif;
+
 }
 
 /* .main_header p {
@@ -21,16 +22,18 @@
     margin-bottom: 0;
 } */
 
+
 .menu {
     background-color: rgb(186, 244, 254);
     color: rgb(66, 66, 66);
-}
+    margin: unset}
 
 nav {
     margin-left: -1rem;
     padding: 0;
     background-color: rgb(127, 235, 255);
     color: rgb(66, 66, 66);
+    margin: auto;
 }
 
 nav ul {
@@ -84,8 +87,9 @@ body {
 }
 
 h3 {
-    background-color:  rgb(255, 254, 213);
+    background-color:  rgb(252, 251, 223);
     text-align: center;
+    margin: 3rem;
 }
 
 img {
@@ -159,6 +163,7 @@ nav a {
 .verde {
     color: green
 }
+
 
 /* strong {
     font-weight: normal;
@@ -315,4 +320,9 @@ nth-of-type(odd)    las impares    */
 /* filas impares celdas de datos */
 .viajes tr:nth-of-type(odd) td {
     background-color: aliceblue;
+}
+
+.icono {
+    position: relative;
+    top: 10px;
 }

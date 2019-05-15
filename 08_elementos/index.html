@@ -15,9 +15,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body id="inicio">
     <header class="main_header">
-        <h1>Etiquetas de HTML</h1>
+        <h1>Etiquetas de HTML <img id="icono" src="https://img.icons8.com/color/48/000000/html-5.png"></h1>
         <p>~Clasificación de las <strong>etiquetas</strong> según el <strong>estándar HTML 5.2~</strong></p>
     </header>
     <main>
@@ -38,19 +38,24 @@
     </main>
     <p class="p1 titulo">~Introducción~</p>
     <div class="content_wrapper">
-        <section class="sections" id="section_elements">
-
+        <section class="sections centrar" id="section_elements">
+            <p><a href="#a" rel="tag">¿Qué son las etiquetas HTML?</a></p>
+            <p><a href="#b" rel="tag">Atributos para tus Etiquetas</a></p>
+            <p><a href="#c" rel="tag">Etiquetas y atributos afines</a></p>
             <header>
-                <h2 class="p1">¿Qué son las etiquetas HTML?</h2>
+                <h2 class="p1" id="a">¿Qué son las etiquetas HTML?</h2>
             </header>
             <div class="desarrollo">
                 <p class="p2">Las etiquetas HTML son el camino que se va haciendo para desarrollar una Web.</p>
-                <p class="p2">Todo lo que escribimos o subimos irá dentro de las etiquetas, que le dirán a la Web qué es lo que
+                <p class="p2">Todo lo que escribimos o subimos irá dentro de las etiquetas, que le dirán a la Web qué es
+                    lo que
                     vamos haciendo. </p>
-                <p class="p2">Por un lado tendremos etiquetas para estructurar, que le dirán a la Web si lo que estamos escribiendo
+                <p class="p2">Por un lado tendremos etiquetas para estructurar, que le dirán a la Web si lo que estamos
+                    escribiendo
                     en su interior es la cabecera de nuestra página, es el cuerpo, es el pie de página o es un elemento
                     aparte. </p>
-                <p class="p2">También tendremos etiquetas para indicar si nuestra intención es escribir un párrafo, subir una
+                <p class="p2">También tendremos etiquetas para indicar si nuestra intención es escribir un párrafo,
+                    subir una
                     imagen, crear una lista, o para que la Web sepa qué palabras de nuestro texto son clave y nuestra
                     página aparezca en el buscador cuando alguien trate de buscar contenido a través de esas palabras.
                 </p>
@@ -61,32 +66,96 @@
                     <h3>
                         <dt>Sencillas (One-sided tag)</dt>
                     </h3>
-                    <dd class="p2">Por ejemplo, para indicar que queremos realizar un salto de línea podría usarse la etiqueta
+                    <dd class="p2">Por ejemplo, para indicar que queremos realizar un salto de línea podría usarse la
+                        etiqueta
                         <strong>&lt;br&gt;</strong></dd>
                     <h3>
                         <dt>Dobles (Two-sided tag)</dt>
                     </h3>
 
-                    <dd class="p2">Donde <strong> &lt;etiqueta&gt; </strong> es la etiqueta de apertura y <strong>
-                            &lt;/etiqueta&gt; </strong> es la etiqueta de cierre,
-                        indicada por la diagonal. Por ejemplo, para escribir un párrafo, primero indicamos con la
-                        etiqueta de apertura que el
-                        texto que va entre estas dos etiquetas es un párrafo, después escribimos nuestro párrafo dentro,
-                        y no nos olvidamos de cerrarlo con la etiqueta de cierre o nuestra página irá presentando
-                        errores. Ejemplo de párrafo bien estructurado: <p><strong>&lt;p&gt;</strong>Caminante, no hay
-                            camino, se hace camino al etiquetar<strong>&lt;/p&gt;</strong></dd>
+                    <dd>
+                        <p class="p2">Donde <strong> &lt;etiqueta&gt; </strong> es la etiqueta de apertura y <strong>
+                                &lt;/etiqueta&gt; </strong> es la etiqueta de cierre, indicada por la diagonal.Por
+                            ejemplo, para escribir un párrafo, primero indicamos con la
+                            etiqueta de apertura que el
+                            texto que va entre estas dos etiquetas es un párrafo, después escribimos nuestro párrafo y
+                            por último lo cerramos con la etiqueta de cierre</p>.
+                        <p class="p2">Ejemplo de párrafo bien estructurado:</p>
+                        <p><strong>&lt;p&gt;</strong>Caminante, no hay
+                            camino, se hace camino al etiquetar<strong>&lt;/p&gt;</strong>
+                            <p class="p2">Recuerda siempre cerrar todas las etiquetas dobles o tu página irá presentando
+                                errores.</p>
+                    </dd>
                     </p>
                 </dl>
             </div>
 
             <header>
-                <h2 class="p1">¿Qué son los atributos?</h2>
+                <h2 class="p1" id="b">Atributos para tus Etiquetas</h2>
             </header>
+            <div class="desarrollo">
+                <p class="p2">Dentro de las etiquetas se pueden colocar una serie de <strong>Atributos</strong></p>
+                <p class="p2">Los atributos sirven para especificar los detalles de las etiquetas que los contienen.</p>
+                <p class="p2">Pueden darle un estilo al contenido de la etiqueta, por ejemplo si usas el atributo <em
+                        class="negrita">style</em>, o pueden llevar a una URL
+                    añadiendo a la etiqueta <em class="sub">&lt;a&gt;</em> el atributo <em class="negrita">href</em>,
+                    así como indicar un
+                    título con <em class="negrita">title</em>.</p>
+                <p class="p2">De esta manera hacemos que la web nos entienda.</p>
+                <p class="p2">Los atributos se escriben a la derecha de su etiqueta, dentro de los corchetes angulares
+                    que la contienen, separados de ésta únicamente por un espacio.</p>
+                <aside>
+                    <figure class="image_wrapper">
+                        <img src="./assets/Captura10.PNG" alt="Captura10">
+                    </figure>
+                </aside>
+                <p class="p2">¿Y cómo especificamos los detalles de este atributo?</p>
+                <p class="p2">Una vez escrito el atributo dentro de la etiqueta, utilizaremos el símbolo "igual que"
+                    (<span class="negrita">=</span>) y especificaremos sus detalles dentro de unas comillas.</p>
+                <aside>
+                    <figure class="image_wrapper">
+                        <img src="./assets/Captura11.PNG" alt="Captura11">
+                        <figcaption>
+                            <p style="color: blue">He cambiado el color de este párrafo añadiéndole el atributo style
+                            </p>
+                        </figcaption>
+                    </figure>
+                </aside>
+                <p class="p2">Es mejor editar los estilos en <em class="sub">CSS</em> a través de los atributos <em
+                        class="negrita">id</em> y <em class="negrita">class</em>, pero eso lo veremos más adelante.</p>
+            </div>
             <header>
-                <h2 class="p1">Etiquetas y atributos afines</h2>
+                <h2 class="p1" id="c">Etiquetas y atributos afines</h2>
             </header>
+            <div class="desarrollo">
+                <p class="p2">HTML nos ha definido una serie de atributos globales, que se pueden utilizar en cualquier
+                    etiqueta, como es el caso de los atributos de estilo (le puedo asignar un estilo tanto a un párrafo
+                    como a todo el cuerpo de mi página, por ejemplo) pero también existen atributos asignados a cierto
+                    tipo de etiquetas, y etiquetas que obligatoriamente han de tener un atributo.</p>
+                <p class="p2">Por ejemplo, si quiero subir una imagen usaré una etiqueta simple <em
+                        class="negrita">&lt;img&gt;</em>, pero necesariamente tendré que usar el atributo <em
+                        class="negrita">src</em> para indicar el enlace de la imagen que quiero subir, ya sea una imagen
+                    local o una imagen de la web.</p>
+                <p class="p2">Si la imagen la tengo en la carpeta local llamada "assets", la etiqueta y su atributo
+                    quedarían así:</p>
+                <aside>
+                    <figure class="image_wrapper">
+                        <img src="./assets/Captura12.PNG" alt="Captura 12">
+                    </figure>
+                </aside>
+                <p class="p2">Si ademas quiero indicar que esa imagen el título de esa imagen, usaría el atributo alt, y
+                    quedaría así: </p>
+                <aside>
+                    <figure class="image_wrapper">
+                        <img src="./assets/Captura13.PNG" alt="Captura 13">
+                    </figure>
+                </aside>
+            </div>
         </section>
     </div>
+    <footer class="footer_inicio">
+        <a href="#inicio" title="inicio"><i class="fas fa-arrow-circle-up"></i></a>
+    </footer>
     <iframe class="iframe_footer" src="./footer.html"></iframe>
     <!-- <footer class="main_footer">
             <address>
