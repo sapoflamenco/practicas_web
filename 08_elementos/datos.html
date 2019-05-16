@@ -6,41 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Elementos de HTML5">
-    <title>Elementos de la Web - Multimedia</title>
+    <title>Elementos de la Web - Etiquetas de Datos</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/Style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body id="inicio">
     <header class="main_header">
-        <h1>Etiquetas de HTML</h1>
+        <h1>Etiquetas de HTML <img id="icono" src="https://img.icons8.com/color/48/000000/html-5.png" alt="icono_html5">
+        </h1>
         <p>~Clasificación de las <strong>etiquetas</strong> según el <strong>estándar HTML 5.2~</strong></p>
     </header>
-
     <main>
         <p class="menu centrar">Indice:</p>
         <nav class="p1">
             <ul>
                 <li><a href="./index.html" rel="tag">~Introduccion~</a></li>
-                <li><a href="./index.html#Atributos_globales" rel="tag">~Atributos~</a></li>
-                <li><a href="./index.html#Etiquetas_de_documento" rel="tag">~Raíz y Head~</a></li>
-                <li><a href="./index.html#Etiquetas_de_seccion" rel="tag">~Secciones~</a></li>
-                <li><a href="./index.html#Etiquetas_de_agrupacion" rel="tag">~Agrupación~</a></li>
-                <li><a href="./index.html#Etiquetas_de_texto" rel="tag">~Texto~</a></li>
-                <li><a href="./etiquetas_multimedia.html" rel="tag">~Multimedia~</a></li>
-                <li><a href="./datos.html" rel="tag">~Datos~</a>
-                <li>
+                <li><a href="./raiz_head_body.html" rel="tag">~Raíz, Head, Body~</a></li>
+                <li><a href="./esquemas_del_body.html" rel="tag">~Esquemas del Body~</a></li>
+                <li><a href="./agrupación.html" rel="tag">~Agrupación~</a></li>
+                <li><a href="./texto.html" rel="tag">~Texto~</a></li>
+                <li><a href="./multimedia.html" rel="tag">~Multimedia~</a></li>
+                <li><a href="./datos.html" rel="tag">~Datos~</a></li>
+                <li><a href="./atributos.html" rel="tag">~Atributos~</a></li>
             </ul>
         </nav>
     </main>
-    <h2 class="p1 titulo">~Etiquetas de Datos~</h2>
+    <p class="p1 titulo">~Etiquetas de Datos~</h2>
     <div class="content_wrapper">
         <section id="tablas">
             <header>
-                <h3>Tablas</h3>
+                <h2>Tablas</h2>
             </header>
             <p>Ejemplo de tabla con las estadísticas de uso de los distintos navegadores:</p>
 
@@ -165,9 +165,9 @@
         </section>
         <section id="formularios">
             <header>
-                <h3>Formularios</h3>
+                <h2>Formularios</h2>
             </header>
-            <p>Los formularios de incluyen dentro de la etiqueta form</p>
+            <p>Los formularios se incluyen dentro de la etiqueta form</p>
             <p>En ellos se utilizan los siguientes controles</p>
             <ul>
                 <li>Input - Text</li>
@@ -177,17 +177,111 @@
                 <li>Select / Options</li>
                 <li>Botones</li>
             </ul>
-        <p>La etiqueta form tiene dos atributos importantes</p>
-        <ul>
-            <li>Action</li>
-            <li>Method</li>
-        </ul>
-        <form action="https://jsonplaceholder.typicode.com/users" method="POST">
-            
-            <input type="text" name="userName" placeholder="Dime tu nombre">
-            <input type="password" name="userPassword" placeholder="Dime tu contraseña">
-            <button type="submit">Enviar</button>
-        </form>
+            <p>La etiqueta form tiene dos atributos importantes</p>
+            <ul>
+                <li>Action</li>
+                <li>Method</li>
+            </ul>
+            <h3>Formulario mínimo</h3>
+            <p class="p2">Ejemplo de los elementos mínimos de un formulario y uso de los distintos métodos: GET y POST
+            </p>
+            <h4>Uso de GET</h4>
+            <form action="https://jsonplaceholder.typicode.com/users" name="basic-get" method="GET">
+
+                <input type="text" name="userName" placeholder="Dime tu nombre">
+                <input type="password" name="userPassword" placeholder="Dime tu contraseña">
+                <button type="submit">Enviar</button>
+            </form>
+            <h4>Uso de POST</h4>
+            <form action="https://jsonplaceholder.typicode.com/users" name="basic-POST" method="POST">
+
+                <input type="text" name="userName" placeholder="Dime tu nombre">
+                <input type="password" name="userPassword" placeholder="Dime tu contraseña">
+                <button type="submit">Enviar</button>
+            </form>
+            <h3>Formulario mas completo:</h3>
+            <p class="p2">Usamos en un mismo formulario los principales controles</p>
+            <form action="https://jsonplaceholder.typicode.com/users" name="complete-POST" method="POST">
+                <fieldset>
+                    <legend class="centrar form_title">Datos personales</legend>
+                    <label for="" class="form_label">Nombre</label>
+                    <input type="text" name="userName" id="userName" required class="form_control centrar" placeholder="Dime tu nombre y te haré reina en un jardín de datos">
+                    <label for="" class="form_label">Contraseña</label>
+                    <input type="password" name="userPassword" id="userPassword" required minlength="8" maxlength="16" class="form_control centrar" placeholder="Dime la contraseña que no le dirías a nadie más">
+                    <label for="" class="form_label">Email</label>
+                    <input type="email" name="userEmail" id="userEmail" required class="form_control centrar" placeholder="Si me dices a donde, te escribiré tantas veces como quieras">
+                    <label for="" class="form_label">Mas información</label>
+                    <input type="info" name="info" id="info" class="form_control centrar" placeholder="Me gusta cuando callas, pero cuando hablas me gustas más">
+                </fieldset>
+                <p class="p2">También existe la opción de crear un desplegable con varias opciones a elegir, para que el usuario decida si seleccionar una o escribir directamente su propia opción</p>
+                <datalist id="formacion">
+                        <option>Graduado</option>
+                        <option>Licenciado</option>
+                        <option>Doctor</option>
+                        <option>No tengo estudios, pero de tonto no tengo un pelo</option>
+                    </datalist>
+                    <!-- junto datalist con label a traves del atributo datalist -->
+                    <label for="cv">Formación</label>
+                    <input type="text" name="cv" class="form_control centrar" id="cv" list="formacion" placeholder="Seas Nini o Doctor, estamos hechos de amor">
+                <fieldset>
+                    <p class="p2">O la opción de introducir una fecha</p>
+                    <label for="birthDate" class="form_label">Fecha de nacimiento</label>
+                    <input type="date" name="birthDate" id="birthDate" class="form_control centrar">
+                </fieldset>
+                <fieldset>
+                <legend class="form_title form_label padding">Condiciones</legend>
+                    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis, pariatur nemo vel illum iste autem, in iusto, laudantium tempore dolore asperiores officiis aperiam harum est velit. Officiis, impedit repellat.</p>
+                    <input type="checkbox" name="isOK" id="isOk" required>
+                    <label for="isOK">Estoy de acuerdo</label>
+                </fieldset>
+                <fieldset>
+                    <legend class="form_title">Datos del curso</legend>
+                    <label for="curso" class="form_label">Curso</label>
+                    <select name="curso" id="curso" class="form_control" required>
+                            <!-- <select name="curso" id="curso" class="form_control" multiple size="8"> -->
+                        <!-- atributo multiple en etq select para que seleccione varios cursos y size para que se vean las opciones que quiera -->
+                        <option value="">Elige un valor</option>
+                            <optgroup label="Desarrollo Front">
+                        <option value="HTML-01">HTML 5</option>
+                        <option value="CSS-02">CSS 3</option>
+                        <option value="JS-03">JavaScript</option>
+                        </optgroup>
+                        <optgroup label="Programación Back">
+                            <option value="NODE-04">Node JS</option>
+                            <option value="PHP-05">PHP</option>
+                        </optgroup>
+                    </select>
+                    <p>Ubicaciones</p>
+                    <!-- id y label for han de ser iguales -->
+                    <!-- el name y el value  me los dan el back -->
+                    <input type="radio" name="ubi" id="madrid" value="madrid" required> 
+                    <label for="madrid">Madrid</label>
+                    <input type="radio" name="ubi" id="sevilla" value="sevilla"> 
+                    <label for="sevilla">Sevilla</label>
+                    <input type="radio" name="ubi" id="barna" value="barcelona">
+                    <label for="barna">Barcelona</label>
+                </fieldset>
+                <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+                <button type="reset">Borrar <i class="fas fa-eraser"></i></button>
+            </form>
+            <p class="p2">Existen otros controles de formulario</p>
+            <dl class="centrar">
+                <dt class="dt">Input color</dt>
+                <dd class="dd"><input type="color"></dd>
+                <dt class="dt">Input file</dt>
+                <dd class="dd"><input type="file"></dd>
+                <dt class="dt">Input number</dt>
+                <dd class="dd"> <input type="number" min="0" max="10" step="2"></dd>
+                <dt class="dt">Input range</dt>
+                <dd class="dd"><input type="range" min="-1" max="1"></dd>
+                <dt class="dt">Input search</dt>
+                <dd class="dd"><input type="search"></dd>
+                <dt class="dt">Input tel</dt>
+                <dd class="dd"><input type="tel"></dd>
+                <dt class="dt">Input url</dt>
+                <dd class="dd"><input type="url"></dd>
+            </dl>
+            <div class="clearfix"></div>
         </section>
 
     </div>
