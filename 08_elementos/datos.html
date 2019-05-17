@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/Style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./js/app.js"></script>
 </head>
 
 <body id="inicio">
@@ -211,7 +212,8 @@
                         <label for="" class="form_label">Contraseña</label>
                         <input type="password" name="userPassword" id="userPassword" required
                             pattern="(?=^.{8,16}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*"
-                            class="form_control centrar" placeholder="Dime esas cosas ocultas que no le dirías a nadie más">
+                            class="form_control centrar"
+                            placeholder="Dime esas cosas ocultas que no le dirías a nadie más">
                         <label for="" class="form_label">Email</label>
                         <input type="email" name="userEmail" id="userEmail" required class="form_control centrar"
                             placeholder="Te mandaría mil cartas, pero te escribiré solo cuando quieras">
@@ -293,7 +295,78 @@
                 </dl>
                 <div class="clearfix"></div>
             </section>
-
+            <section>
+                <header>
+                    <h2>Elementos interactivos</h2>
+                </header>
+                <p>Son elementos novedosos incluídos en las modificaciones de HTML5</p>
+                <ul>
+                    <li>Details - HTML 5.1</li>
+                    <li>Dialog -HTML 5.2</li>
+                </ul>
+                <h3>Etiqueta details</h3>
+                <p>Permite crear un bloque con información extra que se muestra opcionalmente</p>
+                <h4>Novedades en HTML 5.1</h4>
+                <details>
+                    <summary>Definir múltiples imágenes para el diseño responsive</summary>
+                    <p>Esta versión nos ofrece la posibilidad de utilizar el tag picture, junto con el atributo srcset
+                        para poder definir múltiples imágenes para el diseño responsivo. Podríamos definir este tag como
+                        un contenedor de imágenes donde los diseñadores podrán declarar varias, que se utilizarán
+                        dependiendo del tamaño de pantalla, píxeles u otros parámetros. Por sí solo este tag no muestra
+                        nada, y para que funcione deberíamos establecer una imagen por defecto utilizando la etiqueta
+                        img habitual. Las imágenes alternativas se ubicarían
+                        dentro de los atributos srcset de los elementos img y source. Este código nos mostrará
+                        la imagen por defecto mientras que el tamaño de la pantalla sea superior a los 960 px. Cuando
+                        sea menor, se mostrará large.jpg, y si es inferior a 360 px se verá "mobile.jpg".</p>
+                </details>
+                <details>
+                    <summary>Mostrar o esconder información extra</summary>
+                    <p>En este caso utilizaremos las nuevas etiquetas details y summary. Mediante su uso podemos añadir
+                        información extra a cualquier contenido. Su principal característica es que la información no se
+                        muestra por defecto, pero si el usuario está interesado tendrá la opción de consultarla. Para
+                        utilizarla debes colocar el tag summary dentro de details. En el interior de summary será donde
+                        pondremos la información visible, que tendrá un icono a su izquierda para mostrar la información
+                        oculta.</p>
+                </details>
+                <details>
+                    <summary>Añadir funciones al menú contextual del navegador</summary>
+                    <p>Esta versión de HTML 5 permite añadir nuevas funciones al menú contextual del navegador. Para
+                        ello hay que utilizar el tag menuitem y su atributo type=context. Para
+                        su uso hay que asignar esa etiqueta como elemento hijo del tag menu, al que habrá que definir el
+                        atributo id, que tendrá así el mismo valor que el atributo contextmenu del elemento que queremos
+                        añadir al menú contextual. El tag menuitem puede ser de tres tipos diferentes: checkbox, command
+                        y radio. Si se ejecuta el código anterior, aparecerá un botón. Si sobre él se pulsa con el botón
+                        derecho, aparece la nueva opción en el menú.</p>
+                    <p>Esta opción se eliminó en la versión 5.2</p>
+                </details>
+                <details>
+                    <summary>Anidar headers y footers</summary>
+                    <p>HTML 5.1 ofrece la posibilidad de anidar varios headers y footers, siempre y cuando cada nivel
+                        esté dentro del contenido de la sección. Útil para crear cabeceras elaboradas.</p>
+                </details>
+                <details>
+                    <summary>Utilizar imágenes con un ancho de 0 píxeles</summary>
+                    <p>Otra de las novedades que incluye esta nueva versión es la posibilidad de utilizar imágenes que
+                        tengan un valor de 0 píxeles de ancho. Esto es muy útil a la hora de incluir fotografías que no
+                        queremos que sean vistas por los usuarios, como pueden ser archivos de trackeo. Lo que sí se
+                        recomienda es que se utilice el atributo alt vacío.</p>
+                </details>
+                <details>
+                    <summary>Crear opciones vacías</summary>
+                    <p>Otra de las cosas que no se podía utilizar hasta la fecha era crear un elemento option vacío.
+                        Este elemento suele ser utilizado conjuntamente con otras etiquetas como select, optgroup o
+                        datalist. Puede ser útil en aquellos casos en los que no queremos sugerir qué opción deben
+                        seleccionar los usuarios.</p>
+                </details>
+                <h3>Etiqueta dialog</h3>
+                <p>La etiqueta dialog, novedad de HTML 5.2, corresponde a lo que se conoce como una ventada modal o simplemente modal</p>
+                <p>El atributo open indicará que el diálogo está activo y disponible para interactuar</p>
+                <dialog id="dlg-sample">
+                    <p>Información que se mostrará cuando aparezca el modal</p>
+                    <button type="button" id="btn-cerrar">Cerrar</button>
+                </dialog>
+                <button type="button" id="btn-info">Mostrar información</button>
+            </section>
         </div>
         <iframe class="iframe_footer" src="./footer.html"></iframe>
 </body>
