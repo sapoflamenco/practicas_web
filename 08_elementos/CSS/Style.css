@@ -375,3 +375,12 @@ form {
 .padding {
     padding-top: 1rem;
 }
+
+/* canvas significa lienzo */
+
+.canvas {
+    width: 400px;
+    height: 400px;
+    border: none;
+    background-color: rgb(186, 244, 254);
+}
