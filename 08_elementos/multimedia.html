@@ -44,7 +44,8 @@
                 </header>
                 <p class="p2">Entre los elementos embebidos y multimedia, veremos como utilizar:</p>
                 <li><a href="#imagenes" rel="tag">Imágenes</a></li>
-                <li><a href="" rel="tag">Elementos de navegación gráficos</a></li>
+                <li><a href="#video" rel="tag">Vídeo y Audio</a></li>
+                <li><a href="#eng" rel="tag">Elementos de navegación gráficos</a></li>
                 <ul>
                     <li>Imágenes</li>
                     <ul>
@@ -62,13 +63,16 @@
                     </ul>
                     <li>Elementos de navegación gráficos</li>
                 </ul>
-                <section>
+                <section id="imagenes">
                     <h3>Imágenes</h3>
                     <div class="section_images">
                         <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
                         <img src="./assets/varanococodrilo1.png" alt="Varano Cocodrilo">
                         <img src="./assets/ardilla.gif" alt="Ardilla">
                         <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="Barcas">
+                        <img src="./assets/005.gif" alt="Gif animado">
+                        <img src="./assets/WoodElf.png" alt="Elfo">
+                        <img srcset="./assets/logo.svg" src="./assets/logo.gif" alt="Logotipo">
                     </div>
                     <div class="clearfix"></div>
                     <!-- hace de barrera para que al hacer float en imagenes no flote tambien lo de abajo -->
@@ -95,6 +99,33 @@
                                     (max-width: 600px), 
                                     (max-width: 800px)" src="./assets/pajaro.jpg" alt="Pajaro en su ramita">
     </div>
+    <p>La etiqueta picture y las imágenes responsivas en HTML</p>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="./assets/iguana.600.jpg" type="image/jpg">
+                        <source media="(min-width: 500px)" srcset="./assets/iguana.500.jpg" type="image/jpg">
+                        <source media="(min-width: 400px)" srcset="./assets/iguana.400.jpg" type="image/jpg">
+                        <source srcset="./assets/iguana.300.jpg" type="image/jpg">
+                        <img src="./assets/iguana.600.jpg" alt="Iguana en un tronco">                        
+                    </picture>
+                    <p>La etiqueta picture y los formatos alternativos de imágenes</p>
+                    <picture>
+                        <source srcset="./assets/tropical-sunrise.webp" type="image/webp">
+                        <img src="./assets/tropical-sunrise.jpg" alt="Amanecer tropical">
+                    </picture>
+                    <picture>
+                        <source srcset="./assets/logo2.svg" type="image/svg+xml">
+                        <img src="./assets/logo2.png" alt="Logotipo">    
+                    </picture>
+                    <p>Etiqueta figure</p>
+                    <figure>
+                        <img src="./assets/komodo.jpg" alt="">
+                        <figcaption>Varano de Komodo</figcaption>
+                    </figure>
+                    <figure>
+                         <img src="./assets/iguana.jpg" alt="">
+                        <figcaption>Iguana</figcaption>                       
+                    </figure>
+                </section>
     <!-- <p>Etiqueta picture</p> -->
     <!-- <picture>
                         <source media="(min-width: 800px)" srcset="./assets/pajaro800.webp" type="image/webp">
@@ -110,7 +141,7 @@
         <!-- hace de barrera para que al hacer float en imagenes no flote tambien lo de abajo -->
         <!-- junto con .clearfix {clear: both;} en CSS-->
     </section>
-    <section>
+    <section id="video">
         <h3>Vídeo y audio</h3>
         <p>Es posible incluir un video desde una fuente externa</p>
         <div class="youtube">
@@ -124,7 +155,7 @@
             <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
         </video>
     </section>
-    <section>
+    <section id="eng">
         <h3>Elementos gráficos de navegación </h3>
         <p>En HTML antiguo se usaba la etiqueta map para definir un hotspot</p>
         <p>En HTML 5 se puede conseguir este efecto usando svg</p>

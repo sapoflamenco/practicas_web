@@ -36,25 +36,32 @@
             </ul>
         </nav>
     </main>
-    <header>
         <p class="p1 titulo">~Etiquetas de Texto~</p>
-    </header>
-    <section class="sections" id="text_level">
-        <div class="etiquetas">
-            
+        <div class="content_wrapper">
+                <section class="sections centrar" id="section_elements">
+            <header>
+                <h2 class="p1">Hiperenlaces</h2>
+            </header>
+            <div class="desarrollo">
+                <p class="p2">La etiqueta &lt;a&gt;</p>
+            </div>
+                
             <section>
-                <h2>Hiperenlaces</h2>
-                <p>La etiqueta &lt;a&gt;</p>
-            </section>
-            <section>
-                <h2>Elementos en línea neutros</h2>
+                <header>
+                     <h2 class="p1">Elementos en línea neutros</h2>
+                </header>
+                <div class="desarrollo">
                 <p class="p2">La etiqueta <em class="sub">&lt;span&gt;</em> no tiene ningún valor
                     semántico. Es el equivalente en línea a &lt;div&gt;, que era en bloque.</p>
                 <p class="p2">Por ejemplo si quiero que la palabra <span class="verde">verde</span>
                     salga de su color.</p>
+                </div>
             </section>
             <section>
-                <h2>Elementos claramente semánticos</h2>
+                <header>
+                  <h2 class="p1">Elementos claramente semánticos</h2>  
+                </header>
+                <div class="desarrollo">
                 <ul class="lista">
                     <li><em class="negrita">&lt;Strong&gt;</em></li>
                     <p>Palabra clave, mejora SEO.</p>
@@ -68,9 +75,14 @@
                     <p>Lo que se dice "la letra pequeña" del texto. Introduce información legal o
                         similar.</p>
                 </ul>
+                
+            </div>
             </section>
             <section>
-                <h2>Elementos con valor semántico nuevo</h2>
+                <header>
+                    <h2 class="p1">Elementos con valor semántico nuevo</h2>
+                </header>
+                <div class="desarrollo">
                 <ul class="lista">
                     <li><em class="negrita">Bold o &lt;b&gt;</em></li>
                     <p>Destacado con fines utilitarios.</p>
@@ -86,9 +98,13 @@
                     <p>Tachar algo que ya no es correcto, como un precio rebajado o retractarse de
                         una frase.</p>
                 </ul>
+            </div>
             </section>
             <section>
-                <h2>Elementos de tipo técnico</h2>
+                <header>
+                        <h2 class="p1">Elementos de tipo técnico</h2>
+                </header>
+                <div class="desarrollo">
                 <ul class="lista">
                     <li><em class="negrita">&lt;Samp&gt;</em></li>
                     <p>Sample, aparece como cursiva.</p>
@@ -108,9 +124,13 @@
                         aparecen las nuestras, y accesibilidad, ya que un lector de voz
                         puede explicarlas.</p>
                 </ul>
+            </div>
             </section>
             <section>
-                <h2>Uso de referencias y citas</h2>
+                <header>
+                    <h2 class="p1">Uso de referencias y citas</h2>
+                </header>
+                <div class="desarrollo">
                 <ul class="lista">
                     <li><em class="negrita">&lt;Q&gt;</em> (quote)</li>
                     <p>Es lo mismo que un &lt;Blockquote&gt; pero en línea.</p>
@@ -118,9 +138,13 @@
                     <p>Títulos de libros, obras, creaciones en general a las que se haga referencia,
                         incluyendo las páginas Web.</p>
                 </ul>
+            </div>
             </section>
             <section>
-                <h2>Otras etiquetas semánticas de HTML 5</h2>
+                <header>
+                   <h2 class="p1">Otras etiquetas semánticas de HTML 5</h2> 
+                </header>
+                <div class="desarrollo">
                 <ul class="lista">
                     <li><em class="negrita">&lt;Time&gt;</em></li>
                     <p>Por ejemplo, para indicar que la frase <time datetime="2019-12-06" title="2019-12-06">"el día de
@@ -130,36 +154,37 @@
                     <p>Marcado interactivo, no se debe usar a través de VSC, ya que quien la suele
                         generar es el propio programa backend.</p>
                 </ul>
+            </div>
             </section>
             <section>
-                <h2>Edits</h2>
+                <header>
+                    <h2 class="p1">Edits</h2>
+                </header>
+                <div class="desarrollo">
                 <ul class="lista">
                     <li><em class="negrita">&lt;Ins&gt;</em></li>
                     <p>Instead, muestra el contenido que se ha insertado en lugar de otro.</p>
                     <li><em class="negrita">&lt;Del&gt;</em></li>
                     <p>Deteled, muestra el contenido que se ha borrado en su lugar, o simplemente borrado.</p>
                 </ul>
+            </div>
             </section>
-            <footer class="footer_inicio">
-                <a href="#inicio">Inicio</a>
-            </footer>
         </div>
 
 
     </section>
     </main>
     <aside>
-        <h2>Publicidad</h2>
-        <p>Aquí iría la publicidad</p>
+        <h2 class="p1">Publicidad</h2>
+        <div class="desarrollo">
+        <p class="p2">Aquí iría la publicidad</p>
+    </div>
     </aside>
     </div>
-    <footer class="main_footer">
-        <address class="recuadro">
-            <p>&copy; &reg; &#8482; MARTA VALDÉS</p>
-            <p><a href="mailto://marta.valdes.azcarraga@tajamar365.com">marta.valdes.azcarraga@tajamar365.com</a>
-            </p>
-        </address>
-    </footer>
-</body>
-
-</html>
+    <footer class="footer_inicio">
+            <a href="#inicio" title="inicio"><i class="fas fa-arrow-circle-up"></i></a>
+        </footer>
+        <iframe class="iframe_footer" src="./footer.html"></iframe>
+    </body>
+    
+    </html>
