@@ -38,25 +38,22 @@
     </main>
     <p class="p1 titulo">~Raíz, Head, Body~</p>
     <div class="content_wrapper">
-        <div class="sections centrar" id="section_elements">
-
+        <section class="sections centrar" id="section_elements">
             <p><a href="#a" rel="tag">Etiquetas Raíz: &lt;!DOCTYPE&gt; y &lt;html&gt;</a></p>
             <p><a href="#b" rel="tag">Etiqueta &lt;Head&gt;. Los Metadatos</a></p>
             <p><a href="#c" rel="tag">Etiqueta &lt;Body&gt;</a></p>
-        </div>
-        <aside>
-            <figure class="image_wrapper">
+            <details>
+                <summary>Ver imagen</summary>
                 <img style="text-align:right" src="./assets/doctype.png" alt="Doctype">
-            </figure>
-        </aside>
-        <div>
+            </details>
             <header>
                 <h2 class="p1" id="a">Etiquetas Raíz</h2>
             </header>
             <div class="desarrollo">
                 <div class="div3">
                     <h3>&lt;!DOCTYPE&gt;</h3>
-                    <p class="p2">Con esta etiqueta simple y su atributo "html", indicamos que el documento está bajo el estándar HTML 5.</p>
+                    <p class="p2">Con esta etiqueta simple y su atributo "html", indicamos que el documento está bajo el
+                        estándar HTML 5.</p>
                     <p class="p2">Se introduce como primera línea de nuestro documento HTML 5.</p>
                     <img src="./assets/doctypeVSC.png" alt="DoctypeVSC">
 
@@ -65,15 +62,12 @@
                     <p class="p2">Representa la raíz de un documento HTML. El documento siempre debe cerrarse con la
                         etiqueta de cierre &lt;/html&gt;</p>
                     <p class="p2">Todo el contenido de nuestra Web estará dentro de esta etiqueta.</p>
-                    <aside>
-                        <figure class="image_wrapper">
-                            <img style="text-align:right" src="./assets/html.png" alt="Html">
-                        </figure>
-                    </aside>
+                    <details>
+                        <summary>Ver imagen</summary>
+                        <img style="text-align:right" src="./assets/html.png" alt="Html">
+                    </details>
                 </div>
             </div>
-        </div>
-        <div>
             <header>
                 <h2 class="p1" id="b">Etiqueta &lt;Head&gt;. Los Metadatos</h2>
             </header>
@@ -83,68 +77,71 @@
                 <p class="p2">Dentro de esta etiqueta se incluye el atributo "lang" para especificar el idioma de
                     nuestro documento</p>
                 <p class="p2">Esta etiqueta alberga en su interior otras etiquetas:</p>
-                <aside>
-                    <figure class="image_wrapper">
-                        <img style="text-align:right" src="./assets/head.PNG" alt="Head">
-                    </figure>
-                </aside>
+                <details>
+                    <summary>Ver imagen</summary>
+                    <img style="text-align:right" src="./assets/head.PNG" alt="Head">
+                </details>
                 <div class="div3">
                     <h3>&lt;title&gt;</h3>
-                    <p class="p2">Define el título del documento, el cual se muestra en la barra de título del navegador
-                        o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida
+                    <p class="p2">Define el título del documento, el cual se muestra en la barra de título del
+                        navegador
+                        o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta
+                        contenida
                         no será interpretada.</p>
-                    <aside>
-                        <figure class="image_wrapper">
-                            <img style="text-align:right" src="./assets/Title.png" alt="Title">
-                        </figure>
-                    </aside>
+                    <details>
+                        <summary>Ver imagen</summary>
+                        <img style="text-align:right" src="./assets/Title.png" alt="Title">
+                    </details>
                     <h3>&lt;meta&gt;</h3>
                     <p class="p2">Define los metadatos que no pueden ser definidos usando otro elemento HTML.</p>
-                    <aside>
-                        <figure class="image_wrapper" id="metadatos">
-                            <img src="./assets/Metadatos.png" alt="Metadatos">
-                        </figure>
-                    </aside>
-
-
-                    <p class="p2"></p>
-                    
-
+                    <details>
+                        <summary>Ver imagen</summary>
+                        <img src="./assets/Metadatos.png" alt="Metadatos">
+                    </details>
                     <h3>&lt;link&gt;</h3>
-                    <p class="p2">Se usa para enlazar JavaScript y CSS externos con el documento HTML actual. Tambien
-                        sirve para asignar un icono o favicon a nuestra web en la pestaña del navegador o en la lista de
+                    <p class="p2">Se usa para enlazar JavaScript y CSS externos con el documento HTML actual.
+                        Tambien
+                        sirve para asignar un icono o favicon a nuestra web en la pestaña del navegador o en la
+                        lista de
                         marcadores.</p>
-                    <aside>
-                        <figure class="image_wrapper">
-                            <img src="./assets/link.png" alt="link">
-                        </figure>
-                    </aside>
+                    <details>
+                        <summary>Ver imagen</summary>
+                        <img src="./assets/link.png" alt="link">
+                    </details>
                     <h3>&lt;style&gt;</h3>
                     <p class="p2">Etiqueta de estilo usada para escribir CSS en línea.</p>
                     <h3>&lt;base&gt;</h3>
                     <p class="p2">Define la URL base para las URLs relativas en la página. Las URL relativas
-                    prescinden de algunas partes de las URL para hacerlas más breves. Como se trata de URL incompletas,
-                    es necesario disponer de información adicional para obtener el recurso enlazado. En concreto, para
-                    que una URL relativa sea útil es imprescindible conocer la URL del origen del enlace. Esta URL la
-                    indicamos en dentro de la etiqueta simple &lt;base&gt;</p>
+                        prescinden de algunas partes de las URL para hacerlas más breves. Como se trata de URL
+                        incompletas,
+                        es necesario disponer de información adicional para obtener el recurso enlazado. En
+                        concreto, para
+                        que una URL relativa sea útil es imprescindible conocer la URL del origen del enlace. Esta
+                        URL la
+                        indicamos en dentro de la etiqueta simple &lt;base&gt;</p>
                     <p class="p2">Sólo puede haber un elemento &lt;base&gt; en un documento.</p>
 
 
                 </div>
             </div>
-        </div>
-        <div>
-            <header>
-                <h2 class="p1" id="c">Etiqueta &lt;Body&gt;</h2>
-            </header>
-            <div class="desarrollo">
-                <p class="p2">Representa el contenido principal de un documento HTML. Solo hay un elemento &lt;Body&gt; en un documento.</p>
-                    <p class="p2">Todo el resto de nuestro documento irá dentro de esta etiqueta, por ejemplo las etiquetas de sección que nos ayudarán a crear el esquema de la página. Detrás del cierre &lt;/Body&gt; no se nos olvidará la etiqueta de cierre &lt;/html&gt; que hemos abierto al principio, en las etiquetas raíz.</p>
-                    
+                <header>
+                    <h2 class="p1" id="c">Etiqueta &lt;Body&gt;</h2>
+                </header>
+                <div class="desarrollo">
+                    <p class="p2">Representa el contenido principal de un documento HTML. Solo hay un elemento
+                        &lt;Body&gt; en
+                        un documento.</p>
+                    <p class="p2">Todo el resto de nuestro documento irá dentro de esta etiqueta, por ejemplo las
+                        etiquetas de
+                        sección que nos ayudarán a crear el esquema de la página. Detrás del cierre &lt;/Body&gt; no se
+                        nos
+                        olvidará la etiqueta de cierre &lt;/html&gt; que hemos abierto al principio, en las etiquetas
+                        raíz.</p>
+
+               
+
             </div>
-
-        </div>
-
+</section>
     </div>
     <footer class="footer_inicio">
         <a href="#inicio" title="inicio"><i class="fas fa-arrow-circle-up"></i></a>
