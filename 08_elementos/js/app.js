@@ -1,3 +1,5 @@
+import dialogPolyfill  from '../../node_modules/dialog-polyfill/index.js'
+
 
 // las funciones siempre se escriben:
 
