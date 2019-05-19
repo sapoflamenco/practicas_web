@@ -2,178 +2,183 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Elementos de HTML5">
-    <title>Elementos de la Web - Esquemas del Body</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/Style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Elementos de HTML5">
+        <title>Elementos de la Web - Esquemas del Body</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+                integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+                crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/Style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body id="inicio">
-    <header class="main_header">
-        <h1>Etiquetas de HTML <img id="icono" src="https://img.icons8.com/color/48/000000/html-5.png" alt="icono_html5">
-        </h1>
-        <p>~Clasificación de las <strong>etiquetas</strong> según el <strong>estándar HTML 5.2~</strong></p>
-    </header>
-    <main>
-        <p class="menu centrar">Indice:</p>
-        <nav class="p1">
-            <ul>
-                <li><a href="./index.html" rel="tag">~Introduccion~</a></li>
-                <li><a href="./raiz_head_body.html" rel="tag">~Raíz, Head, Body~</a></li>
-                <li><a href="./esquemas_del_body.html" rel="tag">~Esquemas del Body~</a></li>
-                <li><a href="./agrupación.html" rel="tag">~Agrupación~</a></li>
-                <li><a href="./texto.html" rel="tag">~Texto~</a></li>
-                <li><a href="./multimedia.html" rel="tag">~Multimedia~</a></li>
-                <li><a href="./datos.html" rel="tag">~Datos~</a></li>
-                <li><a href="./atributos.html" rel="tag">~Atributos~</a></li>
-            </ul>
-        </nav>
-    </main>
-    <p class="p1 titulo">~Esquemas del Body~</p>
-    <div class="content_wrapper">
-        <div class="sections centrar" id="section_elements">
-            <header>
-                <h2 class="p1" lang="en">Elementos de Seccionado</h2>
+        <header class="main_header">
+                <h1>Etiquetas de HTML <img id="icono" src="https://img.icons8.com/color/48/000000/html-5.png"
+                                alt="icono_html5">
+                </h1>
+                <p>~Clasificación de las <strong>etiquetas</strong> según el <strong>estándar HTML 5.2~</strong></p>
         </header>
-        <div class="desarrollo">
-        <p class="p2">Las etiquetas de seccionado son las que se reflejan en el
-                <strong>esquema</strong>/outline de la página.</p>
-        <p  class="p2">Inicialmente estos elementos incluían <strong>&lt;body&gt;</strong> y los encabezados, que
-                van de <strong>&lt;h1&gt;</strong> a <strong>&lt;h6&gt;</strong>.</p>
-        <aside>
-                <figure class="image_wrapper">
-                        <img src="./assets/Captura2.PNG" alt="body">
-                        <figcaption>
-                                <p class="pimg">Ejemplo de &lt;body&gt; y encabezados desde el editor
-                                </p>
-                        </figcaption>
-                </figure>
-                <figure class="image_wrapper">
-                        <img src="./assets/Captura.PNG" alt="encabezados">
-                        <figcaption>
-                                <p class="pimg">Ejemplo de esquema/outline de la página</p>
-                        </figcaption>
-                </figure>
-        </aside>
-        <p>En HTML 5 se añaden los nuevos elementos semánticos:
-                <p><strong> Section, Header, Footer, Nav, Article, Aside.</strong></p>
-                <aside>
-                        <figure class="image_wrapper">
-                                <img src="./assets/estructura-html5.jpg"
-                                        alt="Esquema de los elementos semánticos de HTML 5.2">
-                                <figcaption>
-                                        <p>Esquema de los elementos semánticos de HTML 5.2</p>
-                                        <footer>Tomado de <a
-                                                        href="https://www.aulaclic.es/articulos/html5-semantica_1.html"
-                                                        rel="external">Aulaclic</a>
-                                        </footer>
-                                </figcaption>
-                        </figure>
-                </aside>
-            </div>
-                <div class="etiquetas">
-                        <section id="section">
-                                <h3>Section</h3>
-                                <blockquote class="p2">El elemento de HTML section (&lt;section&gt;)
-                                        representa una sección genérica de un documento. Sirve para
-                                        determinar qué contenido corresponde a qué parte de un
-                                        <strong>esquema</strong>. Piensa en el esquema como en el índice
-                                        de contenido de un libro; un tema común y subsecciones
-                                        relacionadas. Es, por lo tanto, una etiqueta semántica.
-                                </blockquote>
-                                <blockquote class="p2">Su funcionalidad principal es estructurar
-                                        semánticamente un documento a la hora de ser representado por
-                                        parte de un agente usuario. Por ejemplo, un agente de usuario
-                                        que represente el documento en voz, podría exponer al usuario el
-                                        índice de contenido por niveles para navegar rápidamente por las
-                                        distintas partes.</blockquote>
-                                <!--  <footer >
+        <main>
+                <p class="menu centrar">Indice:</p>
+                <nav class="p1">
+                        <ul>
+                                <li><a href="./index.html" rel="tag">~Introduccion~</a></li>
+                                <li><a href="./raiz_head_body.html" rel="tag">~Raíz, Head, Body~</a></li>
+                                <li><a href="./esquemas_del_body.html" rel="tag">~Esquemas del Body~</a></li>
+                                <li><a href="./agrupación.html" rel="tag">~Agrupación~</a></li>
+                                <li><a href="./texto.html" rel="tag">~Texto~</a></li>
+                                <li><a href="./multimedia.html" rel="tag">~Multimedia~</a></li>
+                                <li><a href="./datos.html" rel="tag">~Datos~</a></li>
+                                <li><a href="./atributos.html" rel="tag">~Atributos~</a></li>
+                        </ul>
+                </nav>
+        </main>
+        <p class="p1 titulo">~Esquemas del Body~</p>
+        <div class="content_wrapper">
+                <div class="sections centrar" id="section_elements">
+                        <header>
+                                <h2 class="p1" lang="en">Etiquetas de Seccionado</h2>
+                        </header>
+                        <div class="desarrollo">
+                                <p class="p2">Las etiquetas de seccionado son las que se reflejan en el
+                                        <strong>esquema</strong>/outline de la página.</p>
+                                <p class="p2">Inicialmente estos elementos incluían <strong>&lt;body&gt;</strong> y los
+                                        encabezados, que
+                                        van de <strong>&lt;h1&gt;</strong> a <strong>&lt;h6&gt;</strong>.</p>
+                                        <details>
+                                                        <summary>Ver imagen</summary>
+                                                <img src="./assets/Captura2.PNG" alt="body">
+                                                <figcaption>
+                                                        <p class="pimg">Ejemplo de &lt;body&gt; y encabezados desde el
+                                                                editor
+                                                        </p>
+                                                </figcaption>
+                                        </details>
+                                        <details>
+                                                        <summary>Ver imagen</summary>
+                                                <img src="./assets/Captura.PNG" alt="encabezados">
+                                                <figcaption>
+                                                        <p class="pimg">Ejemplo de esquema/outline de la página</p>
+                                                </figcaption>
+                                        </details>
+                                <p class="p2">En HTML 5 se añaden los nuevos elementos semánticos:
+                                        <p class="p2"><strong> Section, Header, Footer, Nav, Article, Aside.</strong></p>
+                                        <details>
+                                                        <summary>Ver imagen</summary>
+                                                        <img src="./assets/estructura-html5.jpg"
+                                                                alt="Esquema de los elementos semánticos de HTML 5.2">
+                                                        <figcaption>
+                                                                <p class="pimg">Esquema de los elementos semánticos de HTML 5.2</p>
+                                                                <footer><a style="color: blue"
+                                                                                href="https://www.aulaclic.es/articulos/html5-semantica_1.html"
+                                                                                rel="external">(Traído de Aulaclic)</a>
+                                                                </footer>
+                                                        </figcaption>
+                                        </details>
+                        </div>
+                        <div class="etiquetas">
+                                <section id="section">
+                                        <h3>Section</h3>
+                                        <blockquote class="p2">El elemento de HTML section (&lt;section&gt;)
+                                                representa una sección genérica de un documento. Sirve para
+                                                determinar qué contenido corresponde a qué parte de un
+                                                <strong>esquema</strong>. Piensa en el esquema como en el índice
+                                                de contenido de un libro; un tema común y subsecciones
+                                                relacionadas. Es, por lo tanto, una etiqueta semántica.
+                                        </blockquote>
+                                        <blockquote class="p2">Su funcionalidad principal es estructurar
+                                                semánticamente un documento a la hora de ser representado por
+                                                parte de un agente usuario. Por ejemplo, un agente de usuario
+                                                que represente el documento en voz, podría exponer al usuario el
+                                                índice de contenido por niveles para navegar rápidamente por las
+                                                distintas partes.</blockquote>
+                                        <!--  <footer >
                 <cite>
                         <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section" 
                         >"https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/section"</a>
                 </cite>
         </footer> -->
-                        </section>
-                        <section id="header">
-                                <h3>Header</h3>
-                                <blockquote class="p2">El elemento de HTML Header (&lt;header&gt;)
-                                        representa un grupo de ayudas introductorias o de navegación.
-                                        Puede contener algunos elementos de encabezado, pero también
-                                        otros elementos como un logo, una sección que aglutine secciones
-                                        de encabezados, un formulario de búsqueda o cosas parecidas.
-                                </blockquote>
-                        </section>
-                        <section id="footer">
-                                <h3>Footer</h3>
-                                <blockquote class="p2">El Elemento HTML Footer (&lt;footer&gt;)
-                                        representa un pie de página para el contenido de sección más
-                                        cercano o el elemento raíz de sección (p.e, su ancestro mas
-                                        cercano article, aside, nav, section, blockquote, body, details,
-                                        fieldset, figure, td).</blockquote>
-                                <blockquote class="p2">Un pie de página típicamente contiene información
-                                        acerca de el autor de la sección, datos de derechos de autor o
-                                        enlaces a documentos relacionados.</blockquote>
-                        </section>
-                        <section id="nav">
-                                <h3>Nav</h3>
-                                <blockquote class="p2">La MDN indica que esta etiqueta crea un menú de
-                                        navegación (https://developer.mozilla.org).</blockquote>
-                                <blockquote class="p2">El elemento HTML Nav (&lt;nav&gt;) representa una
-                                        sección de una página cuyo propósito es proporcionar enlaces de
-                                        navegación, ya sea dentro del documento actual o a otros
-                                        documentos. Ejemplos comunes de secciones de navegación son
-                                        menús, tablas de contenido e índices. </blockquote>
-                        </section>
-                        <section id="article">
-                                <h3>Article</h3>
-                                <blockquote class="p2">El Elemento article de HTML (&lt;article&gt;)
-                                        representa una composición auto-contenida en un documento,
-                                        página, una aplicación o en el sitio, que se destina a
-                                        distribuir de forma <em>independiente o reutilizable</em>, por
-                                        ejemplo, en la sindicación.</blockquote>
-                                <blockquote class="p2">Podría ser un mensaje en un foro, un artículo de
-                                        una revista o un periódico, una entrada de blog, un comentario
-                                        de un usuario, un widget interactivo o gadget, o cualquier otro
-                                        elemento independiente del contenido. </blockquote>
-                        </section>
-                        <section id="aside">
-                                <h3>Aside</h3>
-                                <blockquote class="p2">El Elemento HTML Aside (&lt;aside&gt;) representa
-                                        una sección de una página que consiste en contenido que está
-                                        <em>tangencialmente relacionado</em> con el contenido que le
-                                        rodea, que podría ser considerado independiente de ese
-                                        contenido. Estas secciones son a menudo representadas como
-                                        barras laterales o como inserciones y contienen una explicación
-                                        al margen como una definición de glosario, elementos
-                                        relacionados indirectamente, como publicidad, la biografía del
-                                        autor, o en aplicaciones web, la información de perfil o enlaces
-                                        a blogs relacionados. </blockquote>
-                        </section>
-                        <footer class="referencia">
-                                <cite>
-                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento"
-                                                target="_blank"
-                                                rel="external">https://developer.mozilla.org/ es/docs/Web/HTML/Elemento</a>
-                                </cite>
-                        </footer>
-                        <footer class="footer_inicio">
-                                <a href="#inicio" title="inicio" ><i class="fas fa-arrow-circle-up"></i></a>
-                        </footer>
-                       
-                           
-                </div>
+                                </section>
+                                <section id="header">
+                                        <h3>Header</h3>
+                                        <blockquote class="p2">El elemento de HTML Header (&lt;header&gt;)
+                                                representa un grupo de ayudas introductorias o de navegación.
+                                                Puede contener algunos elementos de encabezado, pero también
+                                                otros elementos como un logo, una sección que aglutine secciones
+                                                de encabezados, un formulario de búsqueda o cosas parecidas.
+                                        </blockquote>
+                                </section>
+                                <section id="footer">
+                                        <h3>Footer</h3>
+                                        <blockquote class="p2">El Elemento HTML Footer (&lt;footer&gt;)
+                                                representa un pie de página para el contenido de sección más
+                                                cercano o el elemento raíz de sección (p.e, su ancestro mas
+                                                cercano article, aside, nav, section, blockquote, body, details,
+                                                fieldset, figure, td).</blockquote>
+                                        <blockquote class="p2">Un pie de página típicamente contiene información
+                                                acerca de el autor de la sección, datos de derechos de autor o
+                                                enlaces a documentos relacionados.</blockquote>
+                                </section>
+                                <section id="nav">
+                                        <h3>Nav</h3>
+                                        <blockquote class="p2">La MDN indica que esta etiqueta crea un menú de
+                                                navegación (https://developer.mozilla.org).</blockquote>
+                                        <blockquote class="p2">El elemento HTML Nav (&lt;nav&gt;) representa una
+                                                sección de una página cuyo propósito es proporcionar enlaces de
+                                                navegación, ya sea dentro del documento actual o a otros
+                                                documentos. Ejemplos comunes de secciones de navegación son
+                                                menús, tablas de contenido e índices. </blockquote>
+                                </section>
+                                <section id="article">
+                                        <h3>Article</h3>
+                                        <blockquote class="p2">El Elemento article de HTML (&lt;article&gt;)
+                                                representa una composición auto-contenida en un documento,
+                                                página, una aplicación o en el sitio, que se destina a
+                                                distribuir de forma <em>independiente o reutilizable</em>, por
+                                                ejemplo, en la sindicación.</blockquote>
+                                        <blockquote class="p2">Podría ser un mensaje en un foro, un artículo de
+                                                una revista o un periódico, una entrada de blog, un comentario
+                                                de un usuario, un widget interactivo o gadget, o cualquier otro
+                                                elemento independiente del contenido. </blockquote>
+                                </section>
+                                <section id="aside">
+                                        <h3>Aside</h3>
+                                        <blockquote class="p2">El Elemento HTML Aside (&lt;aside&gt;) representa
+                                                una sección de una página que consiste en contenido que está
+                                                <em>tangencialmente relacionado</em> con el contenido que le
+                                                rodea, que podría ser considerado independiente de ese
+                                                contenido. Estas secciones son a menudo representadas como
+                                                barras laterales o como inserciones y contienen una explicación
+                                                al margen como una definición de glosario, elementos
+                                                relacionados indirectamente, como publicidad, la biografía del
+                                                autor, o en aplicaciones web, la información de perfil o enlaces
+                                                a blogs relacionados. </blockquote>
+                                </section>
+                                <footer class="referencia">
+                                        <cite>
+                                                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento"
+                                                        target="_blank" rel="external">https://developer.mozilla.org/
+                                                        es/docs/Web/HTML/Elemento</a>
+                                        </cite>
+                                </footer>
+                                <footer class="footer_inicio">
+                                        <a href="#inicio" title="inicio"><i class="fas fa-arrow-circle-up"></i></a>
+                                </footer>
 
-</section>
-       
-</body>
-</div> 
-<iframe class="iframe_footer" src="./footer.html"></iframe>
+
+                        </div>
+
+                        </section>
+
+
 </div>
+
+</div>
+<iframe class="iframe_footer" src="./footer.html"></iframe>
+</body>
 </html>
