@@ -38,7 +38,7 @@
             </ul>
         </nav>
     </main>
-    <p class="p1 titulo">~Etiquetas de Datos~</h2>
+    <p class="p1 titulo">~Etiquetas de Datos~</p>
         <div class="content_wrapper">
             <section id="tablas">
                 <header>
@@ -207,19 +207,19 @@
                 <form action="https://jsonplaceholder.typicode.com/users" name="complete-POST" method="POST">
                     <fieldset>
                         <legend class="centrar form_title">Datos personales</legend>
-                        <label for="" class="form_label">Nombre</label>
+                        <label for="userName" class="form_label">Nombre</label>
                         <input type="text" name="userName" id="userName" required class="form_control centrar"
                             placeholder="Dime tu nombre y te haré reina en un jardín de datos">
-                        <label for="" class="form_label">Contraseña</label>
+                        <label for="userPassword" class="form_label">Contraseña</label>
                         <input type="password" name="userPassword" id="userPassword" required
                             pattern="(?=^.{8,16}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*"
                             class="form_control centrar"
                             placeholder="Dime esas cosas ocultas que no le dirías a nadie más">
-                        <label for="" class="form_label">Email</label>
+                        <label for="userEmail" class="form_label">Email</label>
                         <input type="email" name="userEmail" id="userEmail" required class="form_control centrar"
                             placeholder="Te mandaría mil cartas, pero te escribiré solo cuando quieras">
-                        <label for="" class="form_label">Mas información</label>
-                        <input type="info" name="info" id="info" class="form_control centrar"
+                        <label for="info" class="form_label">Mas información</label>
+                        <input type="text" name="info" id="info" class="form_control centrar"
                             placeholder="Me gustas cuando callas, pero cuando hablas me gustas más">
                     </fieldset>
                     <p class="p2">También existe la opción de crear un desplegable con varias opciones a elegir, para
@@ -244,8 +244,8 @@
                         <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis, pariatur
                             nemo vel illum iste autem, in iusto, laudantium tempore dolore asperiores officiis aperiam
                             harum est velit. Officiis, impedit repellat.</p>
-                        <input type="checkbox" name="isOK" id="isOk" required>
                         <label for="isOK">Estoy de acuerdo</label>
+                        <input type="checkbox" name="isOK" id="isOK" required>
                     </fieldset>
                     <fieldset>
                         <legend class="form_title">Datos del curso</legend>
