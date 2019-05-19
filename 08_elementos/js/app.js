@@ -9,6 +9,9 @@ import dialogPolyfill  from '../../node_modules/dialog-polyfill/index.js'
 
 
 function main() {
+
+    dialogPolyfill.registerDialog(modal);
+
     document.querySelector('#btn-info')
     .addEventListener('click', mostrar)
     document.querySelector('#btn-cerrar')
@@ -29,7 +32,7 @@ function main() {
 function main2 () {
     let modal = document.querySelector('#dlg-sample')
 
-    dialogPolyfill.registerDialog(modal);
+  
 
     document.querySelector('#btn-info')
     .addEventListener('click', onClick)
@@ -53,7 +56,7 @@ function canvas () {
 
 // para probar las dos formas en la siguiente linea pondre main o main2
 
-document.addEventListener('DOMContentLoaded',main2)
+document.addEventListener('DOMContentLoaded',main)
 
 // canvas
 
