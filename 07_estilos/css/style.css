@@ -6,16 +6,39 @@ de manera normal quedarían:
 @import url(./footer.css); */
 /* La directiva import solo podría tener charset por encima, si no, siempre va en primera línea */
 
+/* @font-face nos permite definir o cargar ficheros de fuentes */
+/* 
+@keyframes lo veremos mas adelante */
+
+/* @namespace
+@page
+@supports
+practicamente no se usan */
+
+/* Como se hacen normalmente las media Query */
+
+/* @media screen and (max-device-width: 500px) {
+    si el dispositivo mide mas de 500px se le hacen estos cambios
+    body {
+        background-color: antiquewhite;
+    }
+} */
+
+
+/* Selector de etiqueta */
 body {
     background-color: white;
     color: black;
 }
 
-/* Como se hacen normalmente las media Query */
+/* Selector de clase */
 
-@media screen and (max-device-width: 500px) {
-    /* si el dispositivo mide mas de 500px se le hacen estos cambios */
-    body {
-        background-color: antiquewhite;
-    }
+.azul {
+    color: aquamarine;
+}
+
+/* Selector de id NO SE USA por BUENAS PRÁCTICAS */
+
+#verde {
+    color: green;
 }

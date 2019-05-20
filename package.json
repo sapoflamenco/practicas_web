@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Valdesazca/carpeta_del_curso#readme",
   "dependencies": {
-    "dialog-polyfill": "^0.5.0"
+    "dialog-polyfill": "^0.5.0",
+    "normalize.css": "^8.0.1"
   }
 }
