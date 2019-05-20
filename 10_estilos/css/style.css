@@ -1,0 +1,21 @@
+/* directivas (de charset para abajo son las que usaremos)*/
+/* Import: para trasladar otros ficheros css. En este caso no la usaremos porque los hemos preferido adjuntar al header de html mediante la etiqueta link */
+/* @import url(./header.css) screen and (max-device-width: 500px); Solo se aplicaria cuando la pantalla sea como mucho de 500px
+de manera normal quedarían:
+ @import url(./header.css)
+@import url(./footer.css); */
+/* La directiva import solo podría tener charset por encima, si no, siempre va en primera línea */
+
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Como se hacen normalmente las media Query */
+
+@media screen and (max-device-width: 500px) {
+    /* si el dispositivo mide mas de 500px se le hacen estos cambios */
+    body {
+        background-color: antiquewhite;
+    }
+}

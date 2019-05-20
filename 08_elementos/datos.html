@@ -40,13 +40,15 @@
     </main>
     <p class="p1 titulo">~Etiquetas de Datos~</p>
         <div class="content_wrapper">
-            <section id="tablas">
+            <section class="sections centrar" id="section_elements">
+                    <p><a href="#a" rel="tag">Tablas</a></p>
+                    <p><a href="#b" rel="tag">Formularios</a></p>
                 <header>
-                    <h2>Tablas</h2>
+                    <h2 class="p1" id="a">Tablas</h2>
                 </header>
-                <p>Ejemplo de tabla con las estadísticas de uso de los distintos navegadores:</p>
-
-
+                <div class="desarrollo">
+                <p class="p2">Ejemplo de tabla con las estadísticas de uso de los distintos navegadores:</p>
+                </div>
                 <table class="main_table">
                     <caption>Porcentaje de uso de los Navegadores Web en los tres últimos años</caption>
                     <tr>
@@ -133,7 +135,10 @@
                         <td></td>
                     </tr>
                 </table>
-                <p>Ejemplo de tabla irregular</p>
+                <div class="desarrollo">
+                <p class="p2">Ejemplo de tabla irregular</p>    
+                </div>
+                
                 <table class="main_table viajes">
                     <tr>
                         <th colspan="2" rowspan="2">Preferencias de viajes</th>
@@ -165,12 +170,12 @@
                     </tr>
                 </table>
             </section>
-            <section id="formularios">
                 <header>
-                    <h2>Formularios</h2>
+                    <h2 class="p1" id="b">Formularios</h2>
                 </header>
-                <p>Los formularios se incluyen dentro de la etiqueta form</p>
-                <p>En ellos se utilizan los siguientes controles</p>
+                <div class="desarrollo">
+                <p class="p2">Los formularios se incluyen dentro de la etiqueta form</p>
+                <p class="p2">En ellos se utilizan los siguientes controles</p>
                 <ul>
                     <li>Input - Text</li>
                     <li>Text Area</li>
@@ -179,15 +184,18 @@
                     <li>Select / Options</li>
                     <li>Botones</li>
                 </ul>
-                <p>La etiqueta form tiene dos atributos importantes</p>
+                <p class="p2">La etiqueta form tiene dos atributos importantes</p>
                 <ul>
                     <li>Action</li>
                     <li>Method</li>
                 </ul>
+                </div>
                 <h3>Formulario mínimo</h3>
+                <div class="desarrollo">
                 <p class="p2">Ejemplo de los elementos mínimos de un formulario y uso de los distintos métodos: GET y
                     POST
                 </p>
+                </div>
                 <h4>Uso de GET</h4>
                 <form action="https://jsonplaceholder.typicode.com/users" name="basic-get" method="GET">
 
@@ -203,7 +211,9 @@
                     <button type="submit">Enviar</button>
                 </form>
                 <h3>Formulario mas completo:</h3>
+                <div class="desarrollo">
                 <p class="p2">Usamos en un mismo formulario los principales controles</p>
+                </div>
                 <form action="https://jsonplaceholder.typicode.com/users" name="complete-POST" method="POST">
                     <fieldset>
                         <legend class="centrar form_title">Datos personales</legend>
@@ -222,8 +232,10 @@
                         <input type="text" name="info" id="info" class="form_control centrar"
                             placeholder="Me gustas cuando callas, pero cuando hablas me gustas más">
                     </fieldset>
+                    <div class="desarrollo">
                     <p class="p2">También existe la opción de crear un desplegable con varias opciones a elegir, para
                         que el usuario decida si seleccionar una o escribir directamente su propia opción</p>
+                        </div>
                     <datalist id="formacion">
                         <option>Graduado</option>
                         <option>Licenciado</option>
@@ -235,7 +247,9 @@
                     <input type="text" name="cv" class="form_control centrar" id="cv" list="formacion"
                         placeholder="Seas Nini o Doctor, estamos hechos de amor">
                     <fieldset>
+                            <div class="desarrollo">
                         <p class="p2">O la opción de introducir una fecha</p>
+                        </div>
                         <label for="birthDate" class="form_label">Fecha de nacimiento</label>
                         <input type="date" name="birthDate" id="birthDate" class="form_control centrar">
                     </fieldset>
@@ -277,7 +291,9 @@
                     <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
                     <button type="reset">Borrar <i class="fas fa-eraser"></i></button>
                 </form>
+                <div class="desarrollo">
                 <p class="p2">Existen otros controles de formulario</p>
+                </div>
                 <dl class="centrar">
                     <dt class="dt">Input color</dt>
                     <dd class="dd"><input type="color"></dd>
@@ -298,19 +314,23 @@
             </section>
             <section>
                 <header>
-                    <h2>Elementos interactivos</h2>
+                    <h2 class="p1">Elementos interactivos</h2>
                 </header>
-                <p>Son elementos novedosos incluídos en las modificaciones de HTML5</p>
+                <div class="desarrollo">
+                <p class="p2">Son elementos novedosos incluídos en las modificaciones de HTML5</p>
+                </div>
                 <ul>
                     <li>Details - HTML 5.1</li>
                     <li>Dialog -HTML 5.2</li>
                 </ul>
                 <h3>Etiqueta details</h3>
-                <p>Permite crear un bloque con información extra que se muestra opcionalmente</p>
+                <div class="desarrollo">
+                <p class="p2">Permite crear un bloque con información extra que se muestra opcionalmente</p>
+               
                 <h4>Novedades en HTML 5.1</h4>
                 <details>
                     <summary>Definir múltiples imágenes para el diseño responsive</summary>
-                    <p>Esta versión nos ofrece la posibilidad de utilizar el tag picture, junto con el atributo srcset
+                    <p class="p2">Esta versión nos ofrece la posibilidad de utilizar el tag picture, junto con el atributo srcset
                         para poder definir múltiples imágenes para el diseño responsivo. Podríamos definir este tag como
                         un contenedor de imágenes donde los diseñadores podrán declarar varias, que se utilizarán
                         dependiendo del tamaño de pantalla, píxeles u otros parámetros. Por sí solo este tag no muestra
@@ -322,7 +342,7 @@
                 </details>
                 <details>
                     <summary>Mostrar o esconder información extra</summary>
-                    <p>En este caso utilizaremos las nuevas etiquetas details y summary. Mediante su uso podemos añadir
+                    <p class="p2">En este caso utilizaremos las nuevas etiquetas details y summary. Mediante su uso podemos añadir
                         información extra a cualquier contenido. Su principal característica es que la información no se
                         muestra por defecto, pero si el usuario está interesado tendrá la opción de consultarla. Para
                         utilizarla debes colocar el tag summary dentro de details. En el interior de summary será donde
@@ -331,37 +351,40 @@
                 </details>
                 <details>
                     <summary>Añadir funciones al menú contextual del navegador</summary>
-                    <p>Esta versión de HTML 5 permite añadir nuevas funciones al menú contextual del navegador. Para
+                    <p class="p2">Esta versión de HTML 5 permite añadir nuevas funciones al menú contextual del navegador. Para
                         ello hay que utilizar el tag menuitem y su atributo type=context. Para
                         su uso hay que asignar esa etiqueta como elemento hijo del tag menu, al que habrá que definir el
                         atributo id, que tendrá así el mismo valor que el atributo contextmenu del elemento que queremos
                         añadir al menú contextual. El tag menuitem puede ser de tres tipos diferentes: checkbox, command
                         y radio. Si se ejecuta el código anterior, aparecerá un botón. Si sobre él se pulsa con el botón
                         derecho, aparece la nueva opción en el menú.</p>
-                    <p>Esta opción se eliminó en la versión 5.2</p>
+                    <p class="p2">Esta opción se eliminó en la versión 5.2</p>
                 </details>
                 <details>
                     <summary>Anidar headers y footers</summary>
-                    <p>HTML 5.1 ofrece la posibilidad de anidar varios headers y footers, siempre y cuando cada nivel
+                    <p class="p2">HTML 5.1 ofrece la posibilidad de anidar varios headers y footers, siempre y cuando cada nivel
                         esté dentro del contenido de la sección. Útil para crear cabeceras elaboradas.</p>
                 </details>
                 <details>
                     <summary>Utilizar imágenes con un ancho de 0 píxeles</summary>
-                    <p>Otra de las novedades que incluye esta nueva versión es la posibilidad de utilizar imágenes que
+                    <p class="p2">Otra de las novedades que incluye esta nueva versión es la posibilidad de utilizar imágenes que
                         tengan un valor de 0 píxeles de ancho. Esto es muy útil a la hora de incluir fotografías que no
                         queremos que sean vistas por los usuarios, como pueden ser archivos de trackeo. Lo que sí se
                         recomienda es que se utilice el atributo alt vacío.</p>
                 </details>
                 <details>
                     <summary>Crear opciones vacías</summary>
-                    <p>Otra de las cosas que no se podía utilizar hasta la fecha era crear un elemento option vacío.
+                    <p class="p2">Otra de las cosas que no se podía utilizar hasta la fecha era crear un elemento option vacío.
                         Este elemento suele ser utilizado conjuntamente con otras etiquetas como select, optgroup o
                         datalist. Puede ser útil en aquellos casos en los que no queremos sugerir qué opción deben
                         seleccionar los usuarios.</p>
                 </details>
+            </div>
                 <h3>Etiqueta dialog</h3>
-                <p>La etiqueta dialog, novedad de HTML 5.2, corresponde a lo que se conoce como una ventada modal o simplemente modal</p>
-                <p>El atributo open indicará que el diálogo está activo y disponible para interactuar</p>
+                <div class="desarrollo">
+                <p class="p2">La etiqueta dialog, novedad de HTML 5.2, corresponde a lo que se conoce como una ventada modal o simplemente modal</p>
+                <p class="p2">El atributo open indicará que el diálogo está activo y disponible para interactuar</p>
+                </div>
                 <dialog id="dlg-sample">
                     <p>Información que se mostrará cuando aparezca el modal</p>
                     <button type="button" id="btn-cerrar">Cerrar</button>
