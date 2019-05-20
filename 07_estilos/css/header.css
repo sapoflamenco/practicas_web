@@ -2,3 +2,11 @@ header {
     background-color: white;
     color: black;
 }
+
+/* si quiero editar por ejemplo un parrafo del header :
+
+header p {
+
+}
+
+pq si pongo solo p se editan todos los parrafaos de mi html */

@@ -1,7 +1,7 @@
-.recuadro {
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 15px;
-}
+/*****************************************
+ESTILOS DEL HEADER
+*****************************************/
+
 
 .main_header {
     background-color: rgb(3, 213, 252);
@@ -21,6 +21,25 @@
     margin-top: -1rem;
     margin-bottom: 0;
 } 
+
+
+/*****************************************
+ESTILOS no usados APUNTES EXTRA
+*****************************************/
+
+/*****************************************
+ESTILOS del FOOTER
+*****************************************/
+
+/*****************************************
+ESTILOS del BODY
+*****************************************/
+
+
+.recuadro {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
 
 
 .menu {
@@ -299,11 +318,19 @@ footer a {
     text-align: center;
 }
 
-.main_table tr:nth-of-type(even) {
+/* .main_table>tr:nth-of-type(even) {
     background-color: aliceblue;
 }
 
-.main_table tr:nth-of-type(odd) {
+.main_table>tr:nth-of-type(odd) {
+    background-color: seashell;
+} */
+
+.main_table>tbody>tr:nth-of-type(even) {
+    background-color: rgb(218, 238, 255);
+}
+
+.main_table>tbody>tr:nth-of-type(odd) {
     background-color: seashell;
 }
 /* nth-of-type(even)   las pares

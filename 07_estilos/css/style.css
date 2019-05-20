@@ -42,3 +42,9 @@ body {
 #verde {
     color: green;
 }
+
+/* Selectores agrupados */
+
+p, blockquote {
+    font-size: 1.1rem;
+}

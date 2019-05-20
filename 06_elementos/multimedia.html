@@ -38,27 +38,28 @@
     </main>
     <p class="p1 titulo">~Multimedia~</p>
     <div class="content_wrapper">
-            <section class="sections centrar" id="section_elements">
-              <p><a href="#imagenes" rel="tag">Imágenes</a></p>
-                
-                <p><a href="#video" rel="tag">Vídeo y Audio</a></p>
-              
-                <p><a href="#eng" rel="tag">Elementos de navegación gráficos</a></p>
-              <header>
-                  <h2 class="p1" id="imagenes">Imágenes</h2>
-              </header>
-              
-              <ul>
-                    <li>jpg</li>
-                    <li>gif</li>
-                    <li>png</li>
-                    <li>(webp)</li>
-                    <li>svg</li>
-                </ul>
-                <div class="desarrollo">
-                            <details>
-                            <summary>Ver imágenes</summary>
-                                    <div class="section_images">                        <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
+        <section class="sections centrar" id="section_elements">
+            <p><a href="#imagenes" rel="tag">Imágenes</a></p>
+
+            <p><a href="#video" rel="tag">Vídeo y Audio</a></p>
+
+            <p><a href="#eng" rel="tag">Elementos de navegación gráficos</a></p>
+            <header>
+                <h2 class="p1" id="imagenes">Imágenes</h2>
+            </header>
+
+            <ul>
+                <li>jpg</li>
+                <li>gif</li>
+                <li>png</li>
+                <li>(webp)</li>
+                <li>svg</li>
+            </ul>
+            <div class="desarrollo">
+                <details>
+                    <summary>Ver imágenes</summary>
+                    <div class="section_images">
+                        <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
                         <img src="./assets/varanococodrilo1.png" alt="Varano Cocodrilo">
                         <img src="./assets/ardilla.gif" alt="Ardilla">
                         <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="Barcas">
@@ -66,69 +67,68 @@
                         <img src="./assets/WoodElf.png" alt="Elfo">
                         <img srcset="./assets/logo.svg" src="./assets/logo.gif" alt="Logotipo">
                     </div>
-                        </details>
-                
-                    <div class="clearfix"></div>
-                    <!-- hace de barrera para que al hacer float en imagenes no flote tambien lo de abajo -->
-                    <!-- junto con .clearfix {clear: both;} en CSS-->
-                   
-                    <P class="p2">Uso de imágenes responsivas en HTML</P>
-                    
-                            <details>
-                                    <summary>Ver imagen</summary>
-                        <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
-                        <img srcset="./assets/komodo.300.jpg 300w, 
+                </details>
+
+                <div class="clearfix"></div>
+                <!-- hace de barrera para que al hacer float en imagenes no flote tambien lo de abajo -->
+                <!-- junto con .clearfix {clear: both;} en CSS-->
+
+                <P class="p2">Uso de imágenes responsivas en HTML</P>
+
+                <details>
+                    <summary>Ver imagen</summary>
+                    <!-- <img src="./assets/komodo.jpg" alt="Varano de Komodo mostrando su lengua bífida"> -->
+                    <img srcset="./assets/komodo.300.jpg 300w, 
                                     ./assets/komodo.400.jpg 400w, 
                                     ./assets/komodo.500.jpg 500w,
-                                    ./assets/komodo.jpg 600w" 
-                            sizes=" (max-width: 300px) 300px, 
+                                    ./assets/komodo.jpg 600w" sizes=" (max-width: 300px) 300px, 
                                     (max-width: 400px) 400px, 
                                     (max-width: 500px) 500px" src="./assets/komodo.jpg"
-                            alt="Varano de Komodo mostrando su lengua bífida">
-                            </details>
-                    
-    <p class="p2">La etiqueta picture y las imágenes responsivas en HTML</p>
-    <details>
-            <summary>Ver imagen</summary>
+                        alt="Varano de Komodo mostrando su lengua bífida">
+                </details>
+
+                <p class="p2">La etiqueta picture y las imágenes responsivas en HTML</p>
+                <details>
+                    <summary>Ver imagen</summary>
                     <picture>
                         <source media="(min-width: 600px)" srcset="./assets/iguana.600.jpg" type="image/jpg">
                         <source media="(min-width: 500px)" srcset="./assets/iguana.500.jpg" type="image/jpg">
                         <source media="(min-width: 400px)" srcset="./assets/iguana.400.jpg" type="image/jpg">
                         <source srcset="./assets/iguana.300.jpg" type="image/jpg">
-                        <img src="./assets/iguana.600.jpg" alt="Iguana en un tronco">                        
+                        <img src="./assets/iguana.600.jpg" alt="Iguana en un tronco">
                     </picture>
-                    </details>
-                    <p class="p2">La etiqueta picture y los formatos alternativos de imágenes</p>
-                    <details>
-                            <summary>Ver imagenes</summary>
+                </details>
+                <p class="p2">La etiqueta picture y los formatos alternativos de imágenes</p>
+                <details>
+                    <summary>Ver imagenes</summary>
                     <picture>
                         <source srcset="./assets/tropical-sunrise.webp" type="image/webp">
                         <img src="./assets/tropical-sunrise.jpg" alt="Amanecer tropical">
                     </picture>
                     <picture>
                         <source srcset="./assets/logo2.svg" type="image/svg+xml">
-                        <img src="./assets/logo2.png" alt="Logotipo">    
+                        <img src="./assets/logo2.png" alt="Logotipo">
                     </picture>
-                    </details>
-                    <p class="p2">Etiqueta figure</p>
-                
-                    <details>
-                            <summary>Ver imágenes</summary>
+                </details>
+                <p class="p2">Etiqueta figure</p>
+
+                <details>
+                    <summary>Ver imágenes</summary>
                     <figure>
                         <img src="./assets/komodo.jpg" alt="">
                         <figcaption>Varano de Komodo</figcaption>
                     </figure>
                     <figure>
-                         <img src="./assets/iguana.jpg" alt="">
-                        <figcaption>Iguana</figcaption>                       
+                        <img src="./assets/iguana.jpg" alt="">
+                        <figcaption>Iguana</figcaption>
                     </figure>
-                    </details>
-                </div>
-                </section>
- 
+                </details>
+            </div>
+        </section>
 
-    <!-- <p>Etiqueta picture</p> -->
-    <!-- <picture>
+
+        <!-- <p>Etiqueta picture</p> -->
+        <!-- <picture>
                         <source media="(min-width: 800px)" srcset="./assets/pajaro800.webp" type="image/webp">
                         <source media="(min-width: 600px)" srcset="./assets/pajaro600.webp" type="image/webp">
                         <source srcset="./assets/pajaro400.webp" type="image/webp">
@@ -141,69 +141,69 @@
 
         <h2 class="p1" id="video">Vídeo y audio</h2>
         <ul class="centrar">
-                <li>mp4</li>
-                <li>ogg</li>
-                <li>webm</li>
-            </ul>
-            <div class="desarrollo">
-        <p class="p2">Es posible incluir un video desde una fuente externa</p>
-        <details>
+            <li>mp4</li>
+            <li>ogg</li>
+            <li>webm</li>
+        </ul>
+        <div class="desarrollo">
+            <p class="p2">Es posible incluir un video desde una fuente externa</p>
+            <details>
                 <summary>Ver vídeo</summary>
-        <div class="youtube">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_93kDSPlKIM"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                <div class="youtube">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_93kDSPlKIM"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </details>
+            <p class="p2">Otra opción es reproducir vídeos de nuestro servidor</p>
+            <details>
+                <summary>Ver vídeo</summary>
+                <video controls poster="./assets/ghost-in-shell.jpg">
+                    <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
+                    <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
+                </video>
+            </details>
         </div>
-        </details>
-        <p class="p2">Otra opción es reproducir vídeos de nuestro servidor</p>
-        <details>
-                <summary>Ver vídeo</summary>
-        <video controls poster="./assets/ghost-in-shell.jpg">
-            <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
-            <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
-        </video>
-        </details>
-            </div>
-    
-            <h2 class="p1">Elementos gráficos de navegación </h2>
-            <div class="desarrollo">
-        <p class="p2">En HTML antiguo se usaba la etiqueta map para definir un hotspot</p>
-        <p class="p2">En HTML 5 se puede conseguir este efecto usando svg</p>
-        <details>
+
+        <h2 class="p1">Elementos gráficos de navegación </h2>
+        <div class="desarrollo">
+            <p class="p2">En HTML antiguo se usaba la etiqueta map para definir un hotspot</p>
+            <p class="p2">En HTML 5 se puede conseguir este efecto usando svg</p>
+            <details>
                 <summary>Ver logo</summary>
-        <embed src="./assets/logo.svg" type="image/svg+xml">
+                <embed src="./assets/logo.svg" type="image/svg+xml">
             </details>
             <p class="p2">También relacionado con la navegación gráfica</p>
-            </div>
-            <h2 class="p1">Elementos embebidos no multimedia</h2>
-            <div class="desarrollo">
-        <p class="p2">La etiqueta iframe permite acceder a otra web desde la nuestra</p>
-        <details>
+        </div>
+        <h2 class="p1">Elementos embebidos no multimedia</h2>
+        <div class="desarrollo">
+            <p class="p2">La etiqueta iframe permite acceder a otra web desde la nuestra</p>
+            <details>
                 <summary>Ver web externa</summary>
-        <iframe class="web_externa" src="https://www.tajamar.es/"></iframe>
-        </details>
-        <p class="p2">Otras formas de insertar contenido son object y embed</p>
-        <p class="p2">Object:</p>
-        <details>
+                <iframe class="web_externa" src="https://www.tajamar.es/"></iframe>
+            </details>
+            <p class="p2">Otras formas de insertar contenido son object y embed</p>
+            <p class="p2">Object:</p>
+            <details>
                 <summary>Ver web externa</summary>
-        <object data="https://www.tajamar.es" type="text/html"></object>
-        </details>
-        <p class="p2">Embed:</p>
-        <details>
+                <object data="https://www.tajamar.es" type="text/html"></object>
+            </details>
+            <p class="p2">Embed:</p>
+            <details>
                 <summary>Ver web externa</summary>
-        <embed src="https://www.tajamar.es" type="text/html">
+                <embed src="https://www.tajamar.es" type="text/html">
             </details>
         </div>
-    <footer class="footer_inicio">
-            <a href="#inicio" title="inicio" ><i class="fas fa-arrow-circle-up"></i></a>
-    </footer>
-    
+        <footer class="footer_inicio">
+            <a href="#inicio" title="inicio"><i class="fas fa-arrow-circle-up"></i></a>
+        </footer>
+
     </div>
     <aside>
         <h2>Publicidad</h2>
         <div class="desarrollo">
-        <p class="p2">Aquí iría la publicidad</p>
-    </div>
+            <p class="p2">Aquí iría la publicidad</p>
+        </div>
     </aside>
     <iframe class="iframe_footer" src="./footer.html"></iframe>
     <!-- <footer class="main_footer">
