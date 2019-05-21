@@ -1,9 +1,17 @@
+*{
+    font-variant: small-caps;
+}
+
+/* da igual donde lo ponga */
+
+
+
 /*****************************************
 ESTILOS DEL HEADER
 *****************************************/
 
 
-header {
+body>header {
     background-color: rgb(241, 208, 184);
     color: black;
     padding-bottom: 2rem;
@@ -11,12 +19,12 @@ header {
     padding-left: 5rem;
 }
 
-        header h1 {
+        body>header h1 {
             margin-top: 0;
             margin-bottom: 0;
         }
         
-        header p {
+        body>header p {
             margin-top: 0;
             margin-bottom: 0;
             font-size: 1.3rem;
@@ -85,25 +93,229 @@ APUNTES DE CLASE - SELECTORES
         }
 
 
-        
-    /*****************************************
+
+/*****************************************
+ESTILOS DE LA SECCIÓN .pseudo-elementos
+*****************************************/      
+
+.pseudo-elementos p::first-letter {
+    font-size: 3rem;
+    font-family: fantasy;
+    color: blue;
+}
+
+.pseudo-elementos p::first-line {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.pseudo-elementos p.medio,
+.pseudo-elementos p.medio::first-letter {
+    color: brown;
+}
+
+.pseudo-elementos p.medio::after {
+    content: "Mira mamá, escribo con style.";
+    display: block;
+    background-color: silver;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.pseudo-elementos blockquote.medio2::before,
+.pseudo-elementos blockquote.medio2::after {
+    content: "Muy importante";
+    display: block;
+    background-color: rgb(219, 218, 155);
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.pseudo-elementos blockquote.medio3::before,
+.pseudo-elementos blockquote.medio3::after {
+    content: "";
+    display: block;
+    background-color: rgb(219, 218, 155);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+}
+
+
+/* otra forma de hacerlo sería con un div como a continuación, pero sería una opción peor, menos estética */
+/* 
+.banda {
+    content: "";
+    display: block;
+    background-color: rgb(219, 218, 155);
+    padding: 1rem;
+    margin-top: 0.5rem;
+} */
+
+/* .pseudo-elementos .pro::before, 
+.pseudo-elementos .pro::after {
+    content: url(../../03_inicio/favicon.ico) "WEIRDO" url(../../03_inicio/favicon.ico);
+    display: block;
+    background-color: rgb(219, 218, 155);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+    text-align: center;
+    font-family: monospace;
+} */
+
+
+.pseudo-elementos .pro::before {
+    content: url(../../03_inicio/favicon.ico) "WEIRDO CLASS" url(../../03_inicio/favicon.ico);
+    display: block;
+    background-color: rgb(219, 218, 155);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+    text-align: center;
+    font-family: monospace;
+}
+
+.pseudo-elementos .pro::after {
+    content: url(../../03_inicio/favicon.ico) "WEIRDO ID" url(../../03_inicio/favicon.ico);
+    display: block;
+    background-color: rgb(219, 218, 155);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+    text-align: center;
+    font-family: monospace;
+}
+
+
+/*****************************************
+ESTILOS DE LA SECCIÓN .numerados
+*****************************************/      
+
+body {
+    counter-reset: pepito;
+}
+
+
+.numerados p::before {
+    counter-increment: pepito;
+    content: counter(pepito, lower-greek) " - ";
+    font-weight: bold;
+
+    /* ha sacado la numeracion alfa beta escribiendo debajo  list-style-type: para que emmet diga los tipos de numeración */
+}
+
+/*****************************************
+ESTILOS DE LA SECCIÓN .comillas
+*****************************************/      
+
+.comillas {
+    quotes: "\00AB" "\00BB";
+}
+
+.comillas p::before {
+    content: open-quote;
+}
+
+.comillas p::after {
+    content: close-quote;
+}
+
+/*****************************************
+ESTILOS DE LA SECCIÓN .pseudo-clases
+*****************************************/  
+
+.pseudo-clases header {
+    background-color: bisque;
+    padding-bottom: 1rem;
+}
+
+.pseudo-clases header h2 {
+    margin-bottom: 0.3rem;
+}
+
+.pseudo-clases header p {
+    display: none;
+    padding-left: 1rem;
+    text-align: center;
+}
+
+
+.pseudo-clases header:hover p {
+    display: initial;
+}
+
+.pseudo-clases a:visited {
+    color: blue;
+}
+
+.pseudo-clases a:link {
+    color:green;
+}
+
+.pseudo-clases div {
+    display: none;
+}
+
+.pseudo-clases header:hover div {
+    display: initial;
+    padding: 1rem;
+    text-align: center
+} 
+
+.pseudo-clases img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*****************************************
+ESTILOS DE LA SECCIÓN .pseudo-numericas
+*****************************************/  
+
+/* :nth-child(2) Afectaria a todos los que sean segundos hijos y párrafos dentro de esa class, por lo que tambien afectaria al segundo hijo de su div, pero solo en caso de que el segundo hijo sea un párrafo */
+.pseudo-numericas p:nth-child(2) {
+    text-decoration: underline;
+}
+
+/* En este caso solo contaria párrafos, por lo que sería el segundo párrafo, sin contar el h2 como en el caso anterior */
+.pseudo-numericas p:nth-of-type(2) {
+    font-style: italic;
+}
+
+.pseudo-numericas li:nth-child(2n) {
+    color: darkcyan;
+}
+
+.pseudo-numericas li:nth-child(2n+1) {
+    color: darkgreen;
+}
+
+/* .pseudo-numericas li:nth-last-of-type(1) {
+    padding-left: 1.5rem;
+}
+ */
+
+
+/*****************************************
 ESTILOS DEL FOOTER
 *****************************************/
 
 
-footer {
+body>footer {
     background-color: rgb(241, 208, 184);
     color: black;
     padding-bottom: 1rem;
     padding-top: 1rem;
     text-align: center;
+    margin-top: 1rem;
 }
 
-footer address{
+body>footer address{
     font-style: normal;
 }
 
-footer p{
+body>footer p{
     margin-top: 0;
     margin-bottom: 0;
 }
