@@ -411,3 +411,7 @@ form {
     border: none;
     background-color: rgb(186, 244, 254);
 }
+
+ol, ul {
+    list-style: none;
+}
