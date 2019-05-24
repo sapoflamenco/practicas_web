@@ -47,20 +47,12 @@
 // SI QUIERO QUE SALUDE A ALGUIEN:
 // (Declaración)
 
-function saludar(nombre = amigo) {
+function saludar(nombre) {
     let saludo = 'Hola '
     console.log(saludo + nombre)
 }
 
-// O BIEN:
-
-// function saludar(nombre) {
-//     let saludo = 'Hola '
-//     console.log(saludo + nombre)
-// }
-
 // INVOCACIÓN:
-
 
 saludar('Pepe')
 saludar('Marta')
@@ -146,7 +138,7 @@ function probar() {
     mostrar(sumar(x,y))
     mostrar(restar(8,2))
     mostrar(multiplicar(8,2))
-    mostrar(dividir(8,2))
+    mostrar(dividir(73,37))
 }
 
 probar()
