@@ -1,1 +1,1 @@
-alert("Alerta, JS podría resultar adictivo.")
+alert("Alerta, JS podría resultar adictivo. Por fin! algo me obedece. Por fin! los resultados dependen solo de mi")
