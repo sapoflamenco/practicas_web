@@ -1,0 +1,1 @@
+alert("Alerta, JS podría resultar adictivo.")

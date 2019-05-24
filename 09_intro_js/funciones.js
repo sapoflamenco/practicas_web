@@ -37,21 +37,20 @@
 
 // DECLARACIÓN DE LA FUNCIÓN: (QUIZÁS NO LA USE, LA TENGO DECLARADA POR SI LUEGO ME HACE FALTA INVOCARLA O EJECUTARLA O USARLA)
 
-function saludar() {
-    let saludo = 'Hola'
-    console.log(saludo)
-}
+// function saludar() {
+//     let saludo = 'Hola'
+//     console.log(saludo)
+// }
 
-// INVOCACIÓN:
 
-saludar()
 
 // SI QUIERO QUE SALUDE A ALGUIEN:
+// (Declaración)
 
-// function saludar(nombre = amigo) {
-//     let saludo = 'Hola '
-//     console.log(saludo + nombre)
-// }
+function saludar(nombre = amigo) {
+    let saludo = 'Hola '
+    console.log(saludo + nombre)
+}
 
 // O BIEN:
 
@@ -60,39 +59,84 @@ saludar()
 //     console.log(saludo + nombre)
 // }
 
-// saludar('Pepe')
-// saludar('Elena')
-// saludar()
+// INVOCACIÓN:
+
+
+saludar('Pepe')
+saludar('Marta')
+saludar()
 
 //////////////////////////////////////////////////
 
 // SEPARACIÓN DE RESPONSABILIDADES o INTERESES:
-
-// @param {number}
-// @param {number}
-// @returns {number}
+// (separation of concerns - Edsger W. Dijkstra )
 
 
-function sumar(a = 0,b = 0) {
+ /**
+  * JSDOc
+  */
+
+/** FUNCIÓN SUMAR:
+ * 
+ * @description recibe dos parámetros y devuelve la suma de ambos
+ * @param {number}
+ * @param {number}
+ * @returns {number}
+ * 
+ */
+
+function sumar (a = 0, b = 0) {
     // let c = a + b
     // return c
     return a + b
 }
 
+/** FUNCIÓN RESTAR:
+ * 
+ * @description recibe dos parámetros y devuelve la restar de ambos
+ * @param {number} a 
+ * @param {number} b 
+ * @returns {number}
+ */
 
 function restar(a = 0,b = 0) {
     return a - b
 }
 
+
+/**FUNCIÓN MULTIPLICAR:
+ * 
+ * @param {number} a 
+ * @param {number} b 
+ * @returns {number}
+ */
+
 function multiplicar(a = 0,b = 1) {
     return a * b
 }
 
-
+/**FUNCIÓN DIVIDIR:
+ * 
+ * @param {number} a 
+ * @param {number} b 
+ * @returns {number}
+ */
 function dividir(a = 0,b = 1) {
     return a / b
 }
 
+
+/** FUNCIÓN MOSTRAR:
+ * 
+  * @description Recibe un texto y lo saca por pantalla
+  * @param {string}
+  * @returns {void}
+  * 
+  */
+
+function mostrar(neuronas = '') {
+    console.log(neuronas)
+} 
 
 
 function probar() {
@@ -105,17 +149,7 @@ function probar() {
     mostrar(dividir(8,2))
 }
 
-
-
-// La función mostrar recibe un texto y lo saca por la pantalla:
-
-// @param {string}
-// @returns {void}
-
-
-// function mostrar(neuronas) {
-//     console.log(neuronas)
-// } 
+probar()
 
 
 
