@@ -5,7 +5,7 @@
 // undefined
 // boolean
 // number (int, float)
-// object
+// object      // es el único complejo, ya que es la agrupación de todos los demás
 // string
 
 ///////////////////////////////////////
