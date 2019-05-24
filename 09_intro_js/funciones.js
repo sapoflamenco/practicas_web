@@ -85,13 +85,13 @@ function sumar (a = 0, b = 0) {
 
 /** FUNCIÓN RESTAR:
  * 
- * @description recibe dos parámetros y devuelve la restar de ambos
+ * @description recibe dos parámetros y devuelve la resta de ambos
  * @param {number} a 
  * @param {number} b 
  * @returns {number}
  */
 
-function restar(a = 0,b = 0) {
+function restar(a = 0, b = 0) {
     return a - b
 }
 
@@ -103,7 +103,7 @@ function restar(a = 0,b = 0) {
  * @returns {number}
  */
 
-function multiplicar(a = 0,b = 1) {
+function multiplicar(a = 0, b = 1) {
     return a * b
 }
 
@@ -113,7 +113,7 @@ function multiplicar(a = 0,b = 1) {
  * @param {number} b 
  * @returns {number}
  */
-function dividir(a = 0,b = 1) {
+function dividir(a = 0, b = 1) {
     return a / b
 }
 
