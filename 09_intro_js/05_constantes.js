@@ -9,7 +9,7 @@ const b = 6       // no se le puede asignar otro valor, ni en un if ni en ningú
 
 ///////////////////////////
 
-const datos = [110, 42, 13]
+const datos = [110, 13, 42]
 const persona = { nombre: 'Pepe', edad: 22 }
 
 console.log(datos[0])          // se empiezan a contar por 0, 1, 2, por lo que datos[0] devolvería 110.
