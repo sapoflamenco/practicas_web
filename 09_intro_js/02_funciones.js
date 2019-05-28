@@ -143,8 +143,11 @@ function probar() {
 
 probar()
 
-
-
+/**
+* not !
+* or ||
+* and &&
+ */
 
 
 
