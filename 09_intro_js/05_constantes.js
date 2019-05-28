@@ -20,7 +20,7 @@ console.log(persona.nombre)    // Pepe.
 
 // datos[3] = 65
 // datos[datos.length] = 65
-// datos.push(65)
+// datos.push(65, 56, 90, 41)
 
 // también podría añadir propiedades al objeto persona:
 
