@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Elementos de HTML5">
+    <title>Viajes París</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body id="inicio">
+    <header class="main_header">
+        <h1>Viajes París<img class="icono" src="./assets/torre-eiffel.png" alt="icono_París">
+        </h1>
+        <p>~Especialistas en el turismo español en París~</strong></p>
+    </header>
+    <nav class="p1">
+        <ul>
+            <li><a href="#a" rel="tag">~París~</a></li>
+            <li><a href="#b" rel="tag">~Por qué elegirnos~</a></li>
+            <li><a href="#c" rel="tag">~Multimedia~</a></li>
+            <li><a href="#d" rel="tag">~Otros datos de París~</a></li>
+            <li><a href="./contacto.html" rel="tag">~Contacto~</a></li>
+        </ul>
+    </nav>
+    <main>
+            <header>
+                    <h2>CONTACTO</h2>
+                </header>
+            <form action="https://jsonplaceholder.typicode.com/users" name="complete-POST" method="POST">
+                <fieldset>
+                    <legend class="centrar form_title">Datos personales</legend>
+                    <label for="userName" class="form_label">Nombre</label>
+                    <input type="text" name="userName" id="userName" required class="form_control centrar"
+                        placeholder="Dime tu nombre y te haré reina en un jardín de datos">
+                    <label for="userPassword" class="form_label">Contraseña</label>
+                    <input type="password" name="userPassword" id="userPassword" required
+                        pattern="(?=^.{8,16}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*"
+                        class="form_control centrar" placeholder="Dime esas cosas ocultas que no le dirías a nadie más">
+                    <label for="userEmail" class="form_label">Email</label>
+                    <input type="email" name="userEmail" id="userEmail" required class="form_control centrar"
+                        placeholder="Te mandaría mil cartas, pero te escribiré solo cuando quieras">
+                    <label for="info" class="form_label">Mas información</label>
+                    <input type="text" name="info" id="info" class="form_control centrar"
+                        placeholder="Me gustas cuando callas, pero cuando hablas me gustas más">
+                </fieldset>
+                <datalist id="formacion">
+                    <option>Graduado</option>
+                    <option>Licenciado</option>
+                    <option>Doctor</option>
+                    <option>No tengo estudios, pero de tonto no tengo un pelo</option>
+                </datalist>
+                <!-- junto datalist con label a traves del atributo datalist -->
+                <label for="cv">Formación</label>
+                <input type="text" name="cv" class="form_control centrar" id="cv" list="formacion"
+                    placeholder="Seas Nini o Doctor, estamos hechos de amor">
+                <fieldset>
+                    <label for="birthDate" class="form_label">Fecha de nacimiento</label>
+                    <input type="date" name="birthDate" id="birthDate" class="form_control centrar">
+                </fieldset>
+                <fieldset>
+                    <legend class="form_title form_label padding">Condiciones</legend>
+                    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis, pariatur
+                        nemo vel illum iste autem, in iusto, laudantium tempore dolore asperiores officiis aperiam
+                        harum est velit. Officiis, impedit repellat.</p>
+                    <label for="isOK">Estoy de acuerdo</label>
+                    <input type="checkbox" name="isOK" id="isOK" required>
+                </fieldset>
+                <fieldset>
+                    <legend class="form_title">Datos del viaje</legend>
+                    <label for="curso" class="form_label">Viaje</label>
+                    <select name="curso" id="curso" class="form_control" required>
+                         <select name="curso" id="curso" class="form_control" multiple size="8">
+                        <!-- atributo multiple en etq select para que seleccione varios cursos y size para que se vean las opciones que quiera -->
+                        <option value="">Elige un valor</option>
+                        <optgroup label="Epoca Vacacional">
+                            <option value="HTML-01">Todo incluído</option>
+                            <option value="CSS-02">Básico</option>
+                            <option value="JS-03">Personalizado</option>
+                        </optgroup>
+                        <optgroup label="Resto del año">
+                            <option value="NODE-04">Todo incluído</option>
+                            <option value="CSS-02">Básico</option>
+                            <option value="JS-03">Personalizado</option>
+                        </optgroup>
+                    </select>
+                    <p>Salida desde</p>
+                    <!-- id y label for han de ser iguales -->
+                    <!-- el name y el value  me los dan el back -->
+                    <input type="radio" name="ubi" id="madrid" value="madrid" required>
+                    <label for="madrid">Madrid</label>
+                    <input type="radio" name="ubi" id="sevilla" value="sevilla">
+                    <label for="sevilla">Sevilla</label>
+                    <input type="radio" name="ubi" id="barna" value="barcelona">
+                    <label for="barna">Barcelona</label>
+                </fieldset>
+                <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+                <button type="reset">Borrar <i class="fas fa-eraser"></i></button>
+                </form>
+                </main>
+                </body>
+                </html>

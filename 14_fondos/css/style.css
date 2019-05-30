@@ -1,0 +1,17 @@
+header {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/img-noise-300x300.png);
+    /* background-repeat: repeat; */
+}
+
+body {
+    /* min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-image: url(../assets/img-noise-300x300.png);
+    background-repeat: repeat-y;
+}
