@@ -1,3 +1,12 @@
+
+body {
+    margin: 0;
+}
+
+main {
+    margin: 5%;
+}
+
 .image_wrapper_left {
     width: 50%;
     float:left;
@@ -11,6 +20,24 @@
     padding-right: 2rem;
     padding-bottom: 0,5rem;
 }
+
+.table-wrapper-right {
+    float: right;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem
+}
+
+.table-wrapper-right:hover table {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+td {
+    padding: 0.2rem 1rem;
+    border: 1px solid; 
+}
+
 
 img {
     max-width: 100%;
@@ -38,8 +65,23 @@ section.animales:after{
 
 header, footer {
     text-align: center;
-    line-height: 6rem;
 }
+
+header h1, footer {
+    line-height: 8rem;
+}
+
+header p {
+    padding-bottom: 1rem;
+    visibility: hidden;
+    /* display: none; */
+}
+
+header:hover p {
+    visibility: initial;
+    /* display: initial; */
+}
+
 
 ul {
     list-style-position: inside;
@@ -54,4 +96,12 @@ ul {
 
 .publi p {
     text-align: center;
+}
+
+aside:before,
+aside:after {
+    content: '';
+    display: block;
+    padding: 0.5rem;
+    opacity: 0.6;
 }
