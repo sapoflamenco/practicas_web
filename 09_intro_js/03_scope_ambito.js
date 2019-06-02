@@ -1,5 +1,5 @@
 'use strict'
-// Madre mia hace media hora que me ha preguntado y sigo con taquicardia
+
 
 // Variable de ámbito global (scope), donde a es la variable y 2 el dato. Antes se decía var en vez de let.
 let a = 2    

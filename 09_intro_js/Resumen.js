@@ -33,8 +33,8 @@ let x = 34 // declaración + inicialización
 //....
 x = 45 // asignación
 x = x * 2 // asignación por expresiones
-
-/* Ámbito
+ 
+/* Ámbito o scope
     - global
     - local 
         - al bloque => let / const
@@ -59,6 +59,8 @@ function prueba() {
     }
     
 }
+/**************************** 37 min ***********************************/
+
 
 prueba()
 

@@ -59,6 +59,4 @@ let precio = 45.60
 let producto = 'Gafas'
 
 
-// en vez de seguir un esquema de aprendizaje lógico tenemos que ir saltando por las preguntitas de la chica del fondo y asi es todo un lío
 
-// a b c d (chica del fondo: y hay x??) a b c d x z w e ioñzgyñn iygño

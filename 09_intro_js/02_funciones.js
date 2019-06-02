@@ -10,8 +10,6 @@
 
 ///////////////////////////////////////
 
-// Saca de mi mente todas esas preocupaciones que no me están dejando pensar
-
 
 // ES6
 
@@ -37,10 +35,10 @@
 
 // DECLARACIÓN DE LA FUNCIÓN: (QUIZÁS NO LA USE, LA TENGO DECLARADA POR SI LUEGO ME HACE FALTA INVOCARLA O EJECUTARLA O USARLA)
 
-// function saludar() {
-//     let saludo = 'Hola'
-//     console.log(saludo)
-// }
+function saludar() {
+    let saludo = 'Hola'
+    console.log(saludo)
+}
 
 
 
@@ -152,3 +150,8 @@ probar()
 
 
 
+function mostrar(cadena = '') {
+    console.log(cadena)
+}
+
+mostrar()
