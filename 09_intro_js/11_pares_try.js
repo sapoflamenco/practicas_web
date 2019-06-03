@@ -69,10 +69,10 @@ function isEntero( n = 0) {
     let r = true 
     if (!isValidNumber(n)) {
         // Excepción: n no es un número
-        return -2
+        throw -2
     } else if (!isEntero(n)) {
         // Excepción: n no es entero
-        return -1
+        throw -1
     } else if (n%2)  {
         r = false
     }
@@ -100,7 +100,12 @@ function isEntero( n = 0) {
            `El número ${n} no es entero`,
            `${n} no es un número`
        ]
-       let i = Number(esPar(n)) // -2 -1, 0, 1
+       try {
+           let i = Number(esPar(n)) 
+       } catch (error) {
+           
+       }
+       
        if ( i< 0) { // código de error
          i = -i + 1 // -1 -> 2 // -2 -> 3
        }
@@ -133,6 +138,39 @@ function isEntero( n = 0) {
         mostrar(x)
         }
    
-   probar()
+//    probar()
 
-   
+
+
+
+/////////////////////////////////////////03 de junio (16:45?)//////////////////////////////////////////////////
+
+
+
+
+
+// function errores () {
+    const x = 'Llora cuanto quieras, no servirá de nada'
+
+    try {
+        //x = 51
+        throw 'Error 113: No mantienes la concentración'
+    } catch (error) {
+        console.log('Disculpa belleza, es que se ha producido un error:') 
+        if(error.name) {
+            console.log(error.name, error.message) 
+        } else{
+            console.log(error)
+        }
+        
+    }
+console.log(x)
+// }
+
+
+// errores()
+
+
+
+module.exports = esPar;
+
