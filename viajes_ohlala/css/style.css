@@ -1,12 +1,11 @@
 
 .main_header {
     min-height: 100vh;
-      background-size: cover;
-    background-color: #151E3F; 
-    ;
-    color: #D7DDF2;
-    ;
-    /* min-height: 10vh; */
+    /* background-color: #151E3F;  */
+    color: #151E3F;
+    background-image: url(../assets/parisfondo.jpg);
+    background-size: cover;
+    background-blend-mode: difference; 
     padding: 0.8rem 0rem 1.2rem 1rem;
     text-align: center;
     font-family: 'Cinzel', serif;
@@ -107,11 +106,35 @@ nav a {
 
 body {
     margin:0;
-    background-color: #D7DDF2;
+    background-color: seashell;
     /* font-family: "Homer Simpson", cursive; */
     font-size: large;
     font-family: 'Cinzel', serif;
 }
+
+/* .content-wrapper section:nth-of-type(1) {
+    background-image: url(../assets/parisfondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-wrapper section:nth-of-type(2) {
+    background-image: url(../assets/parisfondo3.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-wrapper section:nth-of-type(5) {
+    background-image: url(../assets/parisfondo4.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+} */
 
 .content_wrapper {
     margin: 1rem 3rem;
