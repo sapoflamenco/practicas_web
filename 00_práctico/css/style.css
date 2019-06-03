@@ -224,11 +224,14 @@ nav a {
 }
 
 .section_images img{
+    
     max-width: 25%;
     display: block;
     float: left;
 }
-
+.section_images img:first-of-type{
+padding-left: 4rem;
+}
 .section_images img:after{
     content: '';
     display: block;
@@ -426,3 +429,32 @@ main p {
     
     
 }
+
+
+/* ///////////////avión/////////////// */
+
+
+
+#contenedor{
+    width: 280px;
+    margin: 0 auto;
+    padding-top:150px;
+    padding-bottom: 150px;
+   }
+
+
+
+   #contenedor-imagen img {
+    border: 5px solid #eee;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+   }
+
+
+   #contenedor-imagen img:hover {
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+   }
