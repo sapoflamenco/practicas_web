@@ -1,6 +1,7 @@
 
-
 .main_header {
+    min-height: 100vh;
+      background-size: cover;
     background-color: #151E3F; 
     ;
     color: #D7DDF2;
@@ -23,6 +24,26 @@
     max-width: 5%;
 }
 
+
+.main_header2 {
+    
+    background-color: #151E3F; 
+    ;
+    color: #D7DDF2;
+    ;
+    /* min-height: 10vh; */
+    padding: 0.8rem 0rem 1.2rem 1rem;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.main_header2 p {
+    font-size: 1.33rem;
+    font-weight: bold;
+    margin-top: -1rem;
+    margin-bottom: 0;
+} 
 
 .footer {
     background-color: #151E3F; 
@@ -212,7 +233,7 @@ nav a {
 } */
 
 .image_wrapper_50 {
-    width: 50%
+    width: 51%
 }
 
 .image_wrapper_25 {
@@ -225,13 +246,17 @@ nav a {
 
 .section_images img{
     
-    max-width: 25%;
+    max-width: 23%;
     display: block;
     float: left;
+    text-align: center;
 }
 .section_images img:first-of-type{
-padding-left: 4rem;
+padding-left: 2rem;
 }
+.section_images img:last-of-type{
+    padding-right: 2rem;
+    }
 .section_images img:after{
     content: '';
     display: block;
@@ -430,6 +455,9 @@ main p {
     
 }
 
+.multimedia {
+    padding-left: 3rem;
+}
 
 /* ///////////////avión/////////////// */
 
@@ -439,13 +467,13 @@ main p {
     width: 280px;
     margin: 0 auto;
     padding-top:150px;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
    }
 
 
 
    #contenedor-imagen img {
-    border: 5px solid #eee;
+    border: none;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;

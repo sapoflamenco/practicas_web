@@ -13,7 +13,7 @@
   Note: IE6 works fine without this fix.
 */
 
-body {
+main {
   min-width: 960px;
 }
 
@@ -43,7 +43,7 @@ body {
 .grid_12
  {
   display: inline;
-  /* float: left; */
+  float: left;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -86,7 +86,6 @@ body {
   width: 140px;
 }
 
-
 .container_12 .grid_3 {
   width: 220px;
 }
@@ -98,7 +97,6 @@ body {
 .container_12 .grid_5 {
   width: 380px;
 }
-
 
 .container_12 .grid_6 {
   width: 460px;
@@ -127,7 +125,6 @@ body {
 .container_12 .grid_12 {
   width: 940px;
 }
-
 
 /* `Prefix Extra Space >> Global
 ----------------------------------------------------------------------------------------------------*/
@@ -181,10 +178,6 @@ body {
 .container_12 .prefix_11 {
   padding-left: 880px;
 }
-
-/* `Prefix Extra Space >> 16 Columns
-----------------------------------------------------------------------------------------------------*/
-
 
 /* `Suffix Extra Space >> Global
 ----------------------------------------------------------------------------------------------------*/
@@ -293,6 +286,59 @@ body {
   left: 880px;
 }
 
+/* `Pull Space >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .pull_3,
+.container_16 .pull_4 {
+  left: -240px;
+}
+
+.container_12 .pull_6,
+.container_16 .pull_8 {
+  left: -480px;
+}
+
+.container_12 .pull_9,
+.container_16 .pull_12 {
+  left: -720px;
+}
+
+/* `Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .pull_1 {
+  left: -80px;
+}
+
+.container_12 .pull_2 {
+  left: -160px;
+}
+
+.container_12 .pull_4 {
+  left: -320px;
+}
+
+.container_12 .pull_5 {
+  left: -400px;
+}
+
+.container_12 .pull_7 {
+  left: -560px;
+}
+
+.container_12 .pull_8 {
+  left: -640px;
+}
+
+.container_12 .pull_10 {
+  left: -800px;
+}
+
+.container_12 .pull_11 {
+  left: -880px;
+}
+
 
 /* `Clear Floated Elements
 ----------------------------------------------------------------------------------------------------*/
@@ -330,15 +376,4 @@ body {
 .container_12:after,
 .container_16:after {
   clear: both;
-}
-
-/*
-  The following zoom:1 rule is specifically for IE6 + IE7.
-  Move to separate stylesheet if invalid CSS is a problem.
-*/
-
-.clearfix,
-.container_12,
-.container_16 {
-  zoom: 1;
 }

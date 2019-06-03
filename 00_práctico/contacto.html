@@ -13,97 +13,107 @@
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/Style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./js/app.js" type="module"></script>
 </head>
 
 <body id="inicio">
-    <header class="main_header">
-        <h1>Viajes París<img class="icono" src="./assets/torre-eiffel.png" alt="icono_París">
+    <header class="main_header2">
+
+        <h1>viajes oH-Lalá<img class="icono" src="./assets/torre-eiffel.png" alt="icono_París">
         </h1>
         <p>~Especialistas en el turismo español en París~</strong></p>
     </header>
     <nav class="p1">
         <ul>
-            <li><a href="#a" rel="tag">~París~</a></li>
-            <li><a href="#b" rel="tag">~Por qué elegirnos~</a></li>
-            <li><a href="#c" rel="tag">~Multimedia~</a></li>
-            <li><a href="#d" rel="tag">~Otros datos de París~</a></li>
+            <li><a href="./index.html#a" rel="tag">~París~</a></li>
+            <li><a href="./index.html#b" rel="tag">~Por qué elegirnos~</a></li>
+            <li><a href="./index.html#c" rel="tag">~Visualiza tu viaje~</a></li>
+            <li><a href="./index.html#d" rel="tag">~Conoce París~</a></li>
             <li><a href="./contacto.html" rel="tag">~Contacto~</a></li>
         </ul>
     </nav>
     <main>
-            <header>
-                    <h2>CONTACTO</h2>
-                </header>
-            <form action="https://jsonplaceholder.typicode.com/users" name="complete-POST" method="POST">
-                <fieldset>
-                    <legend class="centrar form_title">Datos personales</legend>
-                    <label for="userName" class="form_label">Nombre</label>
-                    <input type="text" name="userName" id="userName" required class="form_control centrar"
-                        placeholder="Dime tu nombre y te haré reina en un jardín de datos">
-                    <label for="userPassword" class="form_label">Contraseña</label>
-                    <input type="password" name="userPassword" id="userPassword" required
-                        pattern="(?=^.{8,16}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*"
-                        class="form_control centrar" placeholder="Dime esas cosas ocultas que no le dirías a nadie más">
-                    <label for="userEmail" class="form_label">Email</label>
-                    <input type="email" name="userEmail" id="userEmail" required class="form_control centrar"
-                        placeholder="Te mandaría mil cartas, pero te escribiré solo cuando quieras">
-                    <label for="info" class="form_label">Mas información</label>
-                    <input type="text" name="info" id="info" class="form_control centrar"
-                        placeholder="Me gustas cuando callas, pero cuando hablas me gustas más">
-                </fieldset>
-                <datalist id="formacion">
-                    <option>Graduado</option>
-                    <option>Licenciado</option>
-                    <option>Doctor</option>
-                    <option>No tengo estudios, pero de tonto no tengo un pelo</option>
-                </datalist>
-                <!-- junto datalist con label a traves del atributo datalist -->
-                <label for="cv">Formación</label>
-                <input type="text" name="cv" class="form_control centrar" id="cv" list="formacion"
-                    placeholder="Seas Nini o Doctor, estamos hechos de amor">
-                <fieldset>
-                    <label for="birthDate" class="form_label">Fecha de nacimiento</label>
-                    <input type="date" name="birthDate" id="birthDate" class="form_control centrar">
-                </fieldset>
-                <fieldset>
-                    <legend class="form_title form_label padding">Condiciones</legend>
-                    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis, pariatur
-                        nemo vel illum iste autem, in iusto, laudantium tempore dolore asperiores officiis aperiam
-                        harum est velit. Officiis, impedit repellat.</p>
-                    <label for="isOK">Estoy de acuerdo</label>
-                    <input type="checkbox" name="isOK" id="isOK" required>
-                </fieldset>
-                <fieldset>
-                    <legend class="form_title">Datos del viaje</legend>
-                    <label for="curso" class="form_label">Viaje</label>
-                    <select name="curso" id="curso" class="form_control" required>
-                         <select name="curso" id="curso" class="form_control" multiple size="8">
-                        <!-- atributo multiple en etq select para que seleccione varios cursos y size para que se vean las opciones que quiera -->
-                        <option value="">Elige un valor</option>
-                        <optgroup label="Epoca Vacacional">
-                            <option value="HTML-01">Todo incluído</option>
-                            <option value="CSS-02">Básico</option>
-                            <option value="JS-03">Personalizado</option>
-                        </optgroup>
-                        <optgroup label="Resto del año">
-                            <option value="NODE-04">Todo incluído</option>
-                            <option value="CSS-02">Básico</option>
-                            <option value="JS-03">Personalizado</option>
-                        </optgroup>
-                    </select>
-                    <p>Salida desde</p>
-                    <!-- id y label for han de ser iguales -->
-                    <!-- el name y el value  me los dan el back -->
-                    <input type="radio" name="ubi" id="madrid" value="madrid" required>
-                    <label for="madrid">Madrid</label>
-                    <input type="radio" name="ubi" id="sevilla" value="sevilla">
-                    <label for="sevilla">Sevilla</label>
-                    <input type="radio" name="ubi" id="barna" value="barcelona">
-                    <label for="barna">Barcelona</label>
-                </fieldset>
-                <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
-                <button type="reset">Borrar <i class="fas fa-eraser"></i></button>
-                </form>
-                </main>
-                </body>
-                </html>
+        <header>
+            <h2>CONTACTO</h2>
+        </header>
+        <form action="https://jsonplaceholder.typicode.com/users" name="complete-POST" method="POST">
+            <fieldset>
+                <legend class="centrar form_title">Datos personales</legend>
+                <label for="userName" class="form_label">Nombre y apellidos</label>
+                <input type="text" name="userName" id="userName" required class="form_control centrar"
+                    placeholder="Dime tu nombre y reinarás en un jardín de datos">
+                <label for="userEmail" class="form_label">Email</label>
+                <input type="email" name="userEmail" id="userEmail" required class="form_control centrar"
+                    placeholder="Te mandaría mil cartas, pero te escribiré solo cuando quieras">
+                <label for="info" class="form_label">Más información</label>
+                <input type="text" name="info" id="info" class="form_control centrar"
+                    placeholder="Cuéntame tus deseos... Serán órdenes para mí">
+            </fieldset>
+            <datalist id="formacion">
+                <option>Eso</option>
+                <option>Bachillerato</option>
+                <option>Estudios Superiores</option>
+                <option>No tengo estudios, pero de tonto no tengo un pelo</option>
+            </datalist>
+            <!-- junto datalist con label a traves del atributo datalist -->
+            <label for="cv">Formación</label>
+            <input type="text" name="cv" class="form_control centrar" id="cv" list="formacion"
+                placeholder="Seas Nini o Doctor, irás a la ciudad del amor">
+            <fieldset>
+                <label for="birthDate" class="form_label">Fecha de nacimiento</label>
+                <input type="date" name="birthDate" id="birthDate" class="form_control centrar">
+            </fieldset>
+
+            <fieldset id="datos_viaje">
+                <legend>Datos del viaje</legend>
+                <label for="viaje" class="form_label">Viaje</label>
+                <select name="viaje" id="viaje" class="form_control" required>
+                    <option value="">Elige un valor</option>
+                    <optgroup label="Epoca Vacacional">
+                        <option value="TI-01">Todo incluído</option>
+                        <option value="B-02">Básico</option>
+                        <option value="P-03">Personalizado</option>
+                    </optgroup>
+                    <optgroup label="Resto del año">
+                        <option value="TI-04">Todo incluído</option>
+                        <option value="B-05">Básico</option>
+                        <option value="P-06">Personalizado</option>
+                    </optgroup>
+                </select>
+
+                <p>Salida desde</p>
+                <!-- id y label for han de ser iguales -->
+                <!-- el name y el value  me los dan el back -->
+                <input type="radio" name="ubi" id="madrid" value="madrid" required>
+                <label for="madrid">Madrid</label>
+                <input type="radio" name="ubi" id="salamanca" value="salamanca">
+                <label for="salamanca">Salamanca</label>
+                <input type="radio" name="ubi" id="barna" value="barcelona">
+                <label for="barna">Barcelona</label>
+            </fieldset>
+            <label for="birthDate" class="form_label">Fecha del viaje</label>
+            <input type="date" name="birthDate" id="birthDate" class="form_control centrar">
+            </fieldset>
+            <fieldset>
+                <legend class="form_title form_label padding">Condiciones</legend>
+                <p class="p2">La información y datos que Ud. nos proporcione voluntariamente a través del Sitio Web se
+                    incluirán en una base de datos que quedará bajo la responsabilidad de Viajes oH-Lalá, con el
+                    objetivo de
+                    proporcionarle un servicio personalizado y a la altura de sus necesidades, mejorando el canal de
+                    comunicación con el usuario. Sus datos también podrán utilizarse para elaborar estadísticas y
+                    estudios de mercado. Asimismo, el registro en el Sitio Web implicará su autorización para que Viajes
+                    oH-Lalá le envíe boletines, newsletters o correspondencia sobre las novedades institucionales,
+                    comerciales y promocionales de Viajes oH-Lalá. Si no desea recibir mensajes, podrá solicitar la cancelación
+                    del envío de mensajes de acuerdo con el procedimiento que más adelante se indica. Viajes oH-Lalá no puede
+                    garantizar que la información transmitida a través del Sitio Web se encuentre completamente segura,
+                    con lo cual Ud. asume este riesgo, que declara conocer y aceptar. </p>
+                <label for="isOK">Estoy de acuerdo</label>
+                <input type="checkbox" name="isOK" id="isOK" required>
+            </fieldset>
+            <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+            <button type="reset">Borrar <i class="fas fa-eraser"></i></button>
+        </form>
+    </main>
+</body>
+
+</html>
