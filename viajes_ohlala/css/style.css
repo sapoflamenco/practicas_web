@@ -486,3 +486,7 @@ main p {
     -ms-transform: rotate(-40deg);
     transform: rotate(-40deg);
    }
+
+   .margin {
+       margin: 2rem;
+   }
